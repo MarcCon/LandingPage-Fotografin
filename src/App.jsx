@@ -1,12 +1,16 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import StoryGrid from "./components/Storys";
+import Carousel from "./components/Carousel";
 
-const App = () => (
-  <div>
-    <Navbar />
-    <StoryGrid/>
-  </div>
-);
+const App = () => {
+  return (
+    <div>
+      <Navbar />
+      <Carousel />
+      <StoryGrid />
+    </div>
+  );
+};
 
 export default App;

@@ -2,8 +2,6 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
 import React, { useState } from "react";
 
-
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -13,37 +11,49 @@ const Navbar = () => {
 
   return (
     <nav className=" max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <img src="/src/assets/LaraLogoWebsite.png" className="h-28 pt-6 p  "></img>
+      <img
+        src="/src/assets/LaraLogoWebsite.png"
+        className="h-28 pt-6 p  "
+      ></img>
 
       <div className="hidden md:flex space-x-16 text-lg font-serif ">
         {/* Desktop Links */}
-       
-        <a href="#" className="mx-3 py-2 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-custom-hover after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
-          HOME
-         </a>
 
-        <a href="#" className=" mx-3 py-2 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-custom-hover after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
+        <a
+          href="#"
+          className="mx-3 py-2 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:bg-custom-hover after:left-1/2 after:right-1/2 after:transition-width after:duration-300 hover:after:left-0 hover:after:right-0"
+        >
+          HOME
+        </a>
+
+        <a
+          href="#"
+          className="mx-3 py-2 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:bg-custom-hover after:left-1/2 after:right-1/2 after:transition-width after:duration-300 hover:after:left-0 hover:after:right-0"
+        >
           ÜBER MICH
         </a>
-        <a href="#" className=" mx-3 py-2 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-custom-hover after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
+        <a
+          href="#"
+          className="mx-3 py-2 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:bg-custom-hover after:left-1/2 after:right-1/2 after:transition-width after:duration-300 hover:after:left-0 hover:after:right-0"
+        >
           PORTFOLIO
         </a>
-        <a href="#" className=" mx-3 py-2 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-custom-hover after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
+        <a
+          href="#"
+          className="mx-3 py-2 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:bg-custom-hover after:left-1/2 after:right-1/2 after:transition-width after:duration-300 hover:after:left-0 hover:after:right-0"
+        >
           LEISTUNGEN
         </a>
-        <a href="#" className="mx-3 py-2 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-custom-hover after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
+        <a
+          href="#"
+          className="mx-3 py-2 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:bg-custom-hover after:left-1/2 after:right-1/2 after:transition-width after:duration-300 hover:after:left-0 hover:after:right-0"
+        >
           KONTAKT
         </a>
       </div>
       <div className="md:hidden">
-
-
         {/* Hamburger Menu */}
-        <RxHamburgerMenu
-          size={30}
-          className="text-red"
-          onClick={toggleMenu}
-        />
+        <RxHamburgerMenu size={30} className="text-red" onClick={toggleMenu} />
       </div>
 
       <div
