@@ -1,6 +1,7 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
 import React, { useState } from "react";
+import { Outlet, Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,6 +20,8 @@ const Navbar = () => {
 
         <div className="hidden md:flex space-x-16 text-lg font-serif ">
           {/* Desktop Links */}
+
+          <Link to="/">HOMEPAGE</Link>
 
           <a
             href="#"
