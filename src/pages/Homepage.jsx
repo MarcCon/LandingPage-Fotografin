@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import StoryGrid from "../components/StoryGrid";
 
 const Homepage = () => {
-  return (
-    <div>Homepage</div>
-  )
-}
+  return <StoryGrid />;
+};
 
-export default Homepage
+export default Homepage;

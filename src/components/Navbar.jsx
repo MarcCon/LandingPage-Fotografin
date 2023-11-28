@@ -21,8 +21,6 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-16 text-lg font-serif ">
           {/* Desktop Links */}
 
-          <Link to="/">HOMEPAGE</Link>
-
           <a
             href="#"
             className="mx-3 py-2 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:bg-custom-hover after:left-1/2 after:right-1/2 after:transition-width after:duration-300 hover:after:left-0 hover:after:right-0"
