@@ -12,10 +12,10 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="  bg-[url('src/assets/BackgroundHeader.png')] max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <nav className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <img
-          src="/src/assets/LaraLogoWebsite.png"
-          className="h-28 pt-6 p  "
+          src="/src/assets/BilderHintergrund/LoogoLara.png"
+          className="h-32 pt-6 p"
         ></img>
 
         <div className="hidden md:flex space-x-16 text-lg font-serif ">

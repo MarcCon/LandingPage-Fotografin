@@ -6,9 +6,8 @@ const stories = [
     description: "Helene & Joshua",
     images: [
       { imageUrl: "/src/assets/BilderSeiten/Helene/Helene1.jpg" },
-      { imageUrl: "/src/assets/BilderSeiten/Helene/Helene1.jpg" },
+
       { imageUrl: "/src/assets/BilderSeiten/Helene/Helene2.jpg" },
-      { imageUrl: "/src/assets/BilderSeiten/Helene/Helene3.jpg" },
       { imageUrl: "/src/assets/BilderSeiten/Helene/Helene4.jpg" },
       { imageUrl: "/src/assets/BilderSeiten/Helene/Helene5.jpg" },
       { imageUrl: "/src/assets/BilderSeiten/Helene/Helene6.jpg" },
