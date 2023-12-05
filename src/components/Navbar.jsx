@@ -12,10 +12,10 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <nav className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
         <img
           src="/src/assets/BilderHintergrund/LoogoLara.png"
-          className="h-32 pt-6 p"
+          className="h-24 p-2"
         ></img>
 
         <div className="hidden md:flex space-x-16 text-lg font-serif ">
@@ -61,7 +61,6 @@ const Navbar = () => {
             onClick={toggleMenu}
           />
         </div>
-
         <div
           className={`md:hidden flex flex-col gap-5  h-screen text-2xl  bg-blue-400 py-2 absolute right-0 top-0 w-60 transition-all ease-in-out duration-500 ${
             isOpen ? "translate-x-0" : "translate-x-full"

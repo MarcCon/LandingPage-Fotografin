@@ -2,10 +2,9 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div class="h-full w-full opacity-60">
-      <img src="/src/assets/BilderHintergrund/Ellipse 4.svg"></img>
+    <div className="min-h-[800px] w-full opacity-70 bg-[url('/src/assets/BilderHintergrund/HeaderHintergrund.svg')] bg-no-repeat bg-cover bg-center ">
+      <p>dsfedsf</p>
     </div>
   );
 };
-
 export default Header;
