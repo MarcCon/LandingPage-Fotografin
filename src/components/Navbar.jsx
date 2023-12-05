@@ -12,75 +12,82 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
-        <img
-          src="/src/assets/BilderHintergrund/LoogoLara.png"
-          className="h-24 p-2"
-        ></img>
+      <div className="min-h-[800px] w-full bg-[url('/src/assets/HeaderBildHelene.png')] bg-cover bg-center bg-no-repeat">
+        <nav className="  mx-32 flex flex-wrap items-center  justify-between p-8">
+          <img src="/src/assets/LogoWeiss.svg" className="h-42 "></img>
 
-        <div className="hidden md:flex space-x-16 text-lg font-serif ">
-          {/* Desktop Links */}
+          <div className="hidden space-x-16 font-serif text-lg md:flex ">
+            {/* Desktop Links */}
 
-          <a
-            href="#"
-            className="mx-3 py-2 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:bg-custom-hover after:left-1/2 after:right-1/2 after:transition-width after:duration-300 hover:after:left-0 hover:after:right-0"
-          >
-            HOME
-          </a>
+            <a
+              href="#"
+              className=" after:transition-width relative mx-3 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0"
+            >
+              HOME
+            </a>
 
-          <a
-            href="#"
-            className="mx-3 py-2 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:bg-custom-hover after:left-1/2 after:right-1/2 after:transition-width after:duration-300 hover:after:left-0 hover:after:right-0"
+            <a
+              href="#"
+              className="after:transition-width relative mx-3 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0"
+            >
+              ÜBER MICH
+            </a>
+            <a
+              href="#"
+              className="after:transition-width relative mx-3 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0"
+            >
+              PORTFOLIO
+            </a>
+            <a
+              href="#"
+              className="after:transition-width relative mx-3 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0"
+            >
+              LEISTUNGEN
+            </a>
+            <a
+              href="#"
+              className="after:transition-width relative mx-3 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0"
+            >
+              KONTAKT
+            </a>
+          </div>
+
+          <div className="md:hidden">
+            {/* Hamburger Menu */}
+            <RxHamburgerMenu
+              size={30}
+              className="text-red"
+              onClick={toggleMenu}
+            />
+          </div>
+          <div
+            className={`absolute right-0 top-0 flex  h-screen w-60  flex-col gap-5 bg-blue-400 py-2 text-2xl transition-all duration-500 ease-in-out md:hidden ${
+              isOpen ? "translate-x-0" : "translate-x-full"
+            }`}
           >
-            ÜBER MICH
-          </a>
-          <a
-            href="#"
-            className="mx-3 py-2 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:bg-custom-hover after:left-1/2 after:right-1/2 after:transition-width after:duration-300 hover:after:left-0 hover:after:right-0"
-          >
-            PORTFOLIO
-          </a>
-          <a
-            href="#"
-            className="mx-3 py-2 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:bg-custom-hover after:left-1/2 after:right-1/2 after:transition-width after:duration-300 hover:after:left-0 hover:after:right-0"
-          >
-            LEISTUNGEN
-          </a>
-          <a
-            href="#"
-            className="mx-3 py-2 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:bg-custom-hover after:left-1/2 after:right-1/2 after:transition-width after:duration-300 hover:after:left-0 hover:after:right-0"
-          >
-            KONTAKT
-          </a>
+            <AiOutlineClose
+              className="text-blue absolute right-2 top-2 duration-150 hover:text-red-400 "
+              onClick={() => setIsOpen(false)}
+            />
+            <a href="#" className="block text-center text-white ">
+              Home
+            </a>
+            <a href="#" className="block text-center text-white ">
+              About
+            </a>
+            <a href="#" className="block text-center text-white ">
+              Contact
+            </a>
+          </div>
+        </nav>
+
+        <div className="ml-36 mt-32 grid grid-rows-2 gap-8">
+          <h1 className="font-serif text-7xl text-white">Deine Momente.</h1>
+          <h1 className="font-serif text-7xl text-white">
+            Festgehalten für die Ewigkeit.
+          </h1>
         </div>
-        <div className="md:hidden">
-          {/* Hamburger Menu */}
-          <RxHamburgerMenu
-            size={30}
-            className="text-red"
-            onClick={toggleMenu}
-          />
-        </div>
-        <div
-          className={`md:hidden flex flex-col gap-5  h-screen text-2xl  bg-blue-400 py-2 absolute right-0 top-0 w-60 transition-all ease-in-out duration-500 ${
-            isOpen ? "translate-x-0" : "translate-x-full"
-          }`}
-        >
-          <AiOutlineClose
-            className="absolute right-2 top-2 text-blue hover:text-red-400 duration-150 "
-            onClick={() => setIsOpen(false)}
-          />
-          <a href="#" className="text-white block text-center ">
-            Home
-          </a>
-          <a href="#" className="text-white block text-center ">
-            About
-          </a>
-          <a href="#" className="text-white block text-center ">
-            Contact
-          </a>
-        </div>
-      </nav>
+      </div>
     </>
   );
 };

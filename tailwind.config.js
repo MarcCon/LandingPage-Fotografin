@@ -5,9 +5,11 @@ export default {
     extend: {
       fontFamily: {
         serif: ["Inria Serif", "serif"],
+        test: ["Montserrat", "sans-serif"],
       },
+
       backgroundColor: {
-        "custom-hover": "rgb(207,181,59)",
+        "custom-hover": "rgb(255,255,255)",
       },
     },
   },

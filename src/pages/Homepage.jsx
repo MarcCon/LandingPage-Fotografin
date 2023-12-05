@@ -1,12 +1,13 @@
 import React from "react";
 import StoryGrid from "../components/StoryGrid";
 import Carousel from "../components/Carousel";
-import Header from "../components/Header";
+
+import Personal from "../components/Personal";
 
 const Homepage = () => {
   return (
     <>
-      <Header />
+      <Personal />
       <Carousel />;
       <StoryGrid />;
     </>
