@@ -5,7 +5,6 @@ export default {
     extend: {
       fontFamily: {
         serif: ["Inria Serif", "serif"],
-        test: ["Montserrat", "sans-serif"],
       },
 
       backgroundColor: {

@@ -214,10 +214,11 @@ const stories = [
   },
   {
     id: 8,
-    imageUrl: "src/assets/bine.png",
+    imageUrl: " src/assets/BilderSeiten/Helene/titelbildhelene.jpg",
     title: "Familienshooting",
     description: "Daniela & ?",
   },
+
   {
     id: 9,
     imageUrl: "src/assets/BilderSeiten/Nele/Nele1.jpg",

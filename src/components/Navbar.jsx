@@ -2,6 +2,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
 import React, { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
+import { CiInstagram } from "react-icons/ci";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
   return (
     <>
       <div className="min-h-[800px] w-full bg-[url('/src/assets/HeaderBildHelene.png')] bg-cover bg-center bg-no-repeat">
-        <nav className="  mx-32 flex flex-wrap items-center  justify-between p-8">
+        <nav className="  mx-32 flex flex-wrap items-center justify-between p-8">
           <img src="/src/assets/LogoWeiss.svg" className="h-42 "></img>
 
           <div className="hidden space-x-16 font-serif text-lg md:flex ">
@@ -50,6 +51,8 @@ const Navbar = () => {
             >
               KONTAKT
             </a>
+
+            <CiInstagram className="" size={30} color="white" />
           </div>
 
           <div className="md:hidden">
@@ -81,11 +84,16 @@ const Navbar = () => {
           </div>
         </nav>
 
-        <div className="ml-36 mt-32 grid grid-rows-2 gap-8">
-          <h1 className="font-serif text-7xl text-white">Deine Momente.</h1>
-          <h1 className="font-serif text-7xl text-white">
+        <div className="ml-36 mt-32 grid grid-rows-3 gap-8">
+          <h1 className="font-serif text-7xl font-extrabold text-white">
+            Deine Momente.
+          </h1>
+          <h1 className="font-serif text-7xl font-extrabold text-white">
             Festgehalten für die Ewigkeit.
           </h1>
+          <button className=" h-auto w-52 rounded-lg border border-white bg-transparent font-serif  text-xl font-semibold text-white transition duration-500 ease-in-out	  hover:border-transparent hover:bg-white hover:text-black ">
+            Kontakt
+          </button>
         </div>
       </div>
     </>
