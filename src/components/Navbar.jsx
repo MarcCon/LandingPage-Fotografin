@@ -14,40 +14,40 @@ const Navbar = () => {
   return (
     <>
       <div className="min-h-[800px] w-full bg-[url('/src/assets/HeaderBildHelene.png')] bg-cover bg-center bg-no-repeat">
-        <nav className="  mx-32 flex flex-wrap items-center justify-between p-8">
-          <img src="/src/assets/LogoWeiss.svg" className="h-42 "></img>
+        <nav className=" lg:text-lg mx-12 flex flex-wrap items-center justify-between pt-8">
+          <img src="/src/assets/LogoWeiss.svg" className=" h-16 sm:h-14 md:h-16 lg:h-20 xl:h-24  "></img>
 
-          <div className="hidden space-x-16 font-serif text-lg md:flex ">
+          <div className="hidden  font-serif text-lg md:flex ">
             {/* Desktop Links */}
-
+         
             <a
               href="#"
-              className=" after:transition-width relative mx-3 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0"
+              className=" sm:text-sm md:text-md lg:text-lg lg:mx-4 xl:mx-8 xl:text-xl 2xl:text-2xl after:transition-width relative mx-4 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0"
             >
               HOME
             </a>
 
             <a
               href="#"
-              className="after:transition-width relative mx-3 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0"
+              className="  sm:text-sm sm:mx-2 md:text-md lg:text-lg lg:mx-4 xl:text-xl xl:mx-8 2xl:text-2xl after:transition-width relative mx-4 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0"
             >
               ÜBER MICH
             </a>
             <a
               href="#"
-              className="after:transition-width relative mx-3 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0"
+              className="  sm:text-sm sm:mx-2 md:text-md lg:text-lg lg:mx-4 xl:text-xl xl:mx-8 2xl:text-2xl after:transition-width relative mx-4 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0"
             >
               PORTFOLIO
             </a>
             <a
               href="#"
-              className="after:transition-width relative mx-3 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0"
+              className="  sm:text-sm sm:mx-2 md:text-md lg:text-lg lg:mx-4 xl:text-xl xl:mx-8 2xl:text-2xl after:transition-width relative mx-4 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0"
             >
               LEISTUNGEN
             </a>
             <a
               href="#"
-              className="after:transition-width relative mx-3 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0"
+              className="sm:text-sm sm:mx-2 md:text-md lg:text-lg lg:mx-4 xl:text-xl xl:mx-8 2xl:text-2xl after:transition-width relative mx-4 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0"
             >
               KONTAKT
             </a>
@@ -83,11 +83,11 @@ const Navbar = () => {
           </div>
         </nav>
 
-        <div className="ml-36 mt-32 grid grid-rows-3 gap-8">
-          <h1 className="font-serif text-7xl font-extrabold text-white">
-            Deine Momente.
+        <div className="sm:ml-12 lg:ml-36 ml-36 mt-32 grid grid-rows-3 gap-8">
+          <h1 className="sm:text-5xl lg:text-6xl font-serif text-7xl font-extrabold text-white">
+            Ihre Momente.
           </h1>
-          <h1 className="font-serif text-7xl font-extrabold text-white">
+          <h1 className="sm:text-5xl lg:text-6xl font-serif text-7xl font-extrabold text-white">
             Festgehalten für die Ewigkeit.
           </h1>
           <button className=" h-auto w-52 rounded-lg border border-white bg-transparent font-serif  text-xl font-semibold text-white transition duration-500 ease-in-out	  hover:border-transparent hover:bg-white hover:text-black ">
