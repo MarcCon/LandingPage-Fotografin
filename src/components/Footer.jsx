@@ -3,9 +3,9 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <section class="bg-white dark:bg-slate-400">
+      <section class=" border-t-2 border-yellow-500 ">
         <div class="mx-auto max-w-screen-md px-4 py-8 lg:py-16">
-          <h2 class="mb-4 text-center font-serif text-4xl tracking-tight  dark:text-white">
+          <h2 class="mb-4 text-center font-serif text-4xl tracking-tight   text-green-900">
             So erreichen Sie mich
           </h2>
           <p class="mb-8 text-center font-light text-gray-500 dark:text-gray-400 sm:text-xl lg:mb-16">
