@@ -4,6 +4,7 @@ import Carousel from "../components/Carousel";
 
 import Personal from "../components/Personal";
 import Divider from "../components/Divider";
+import Footer from "../components/Footer";
 
 const Homepage = () => {
   return (
@@ -12,6 +13,7 @@ const Homepage = () => {
       <Carousel />;
       <Divider />
       <StoryGrid />;
+      <Footer />
     </>
   );
 };

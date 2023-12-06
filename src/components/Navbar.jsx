@@ -51,8 +51,7 @@ const Navbar = () => {
             >
               KONTAKT
             </a>
-
-            <CiInstagram className="" size={30} color="white" />
+            <CiInstagram className="pt-1" size={40} color="white" />
           </div>
 
           <div className="md:hidden">
