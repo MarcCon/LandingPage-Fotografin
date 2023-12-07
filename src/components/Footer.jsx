@@ -3,12 +3,15 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <section class=" w-full h-full border-t-2 bg-[url('/src/assets/FooterPic.jpeg')]  bg-cover bg-center bg-no-repeat">
+      <section class=" h-full w-full border-t-2 bg-[url('/src/assets/FooterPic.jpeg')]  bg-cover bg-center bg-no-repeat">
         <div class="mx-auto max-w-screen-md px-4 py-8 lg:py-16">
-          <h2 class="mb-4 text-center font-serif text-4xl tracking-tight text-white b">
+          <h2
+            id="AnkerKontakt"
+            class="b mb-4 text-center font-serif text-4xl tracking-tight text-white"
+          >
             So erreichen Sie mich
           </h2>
-          <p class=" text-center mb-8 font-light text-white sm:text-xl lg:mb-16">
+          <p class=" mb-8 text-center font-light text-white sm:text-xl lg:mb-16">
             Schreiben Sie mir gerne eine Nachricht, ich antworte so schnell wie
             möglich.
           </p>
@@ -23,7 +26,7 @@ const Footer = () => {
               <input
                 type="email"
                 id="email"
-                class="  focus:ring-white focus:border-white block w-full rounded-lg border border-white bg-footer-input1 p-2.5 text-sm text-white shadow-sm "
+                class="  block w-full rounded-lg border border-white bg-footer-input1 p-2.5 text-sm text-white shadow-sm focus:border-white focus:ring-white "
                 placeholder="E-Mail"
                 required
               />
@@ -39,7 +42,7 @@ const Footer = () => {
               <textarea
                 id="message"
                 rows="6"
-                class="  focus:ring-white focus:border-white block w-full rounded-lg border border-white bg-footer-input1 p-2.5 text-sm text-white shadow-sm "
+                class="  block w-full rounded-lg border border-white bg-footer-input1 p-2.5 text-sm text-white shadow-sm focus:border-white focus:ring-white "
                 placeholder="Schreiben sie mir..."
               ></textarea>
             </div>

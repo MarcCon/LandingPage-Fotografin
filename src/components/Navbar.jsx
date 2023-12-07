@@ -1,8 +1,9 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
 import React, { useState } from "react";
-import { Outlet, Link } from "react-router-dom";
 import { CiInstagram } from "react-icons/ci";
+
+import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,44 +14,48 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="min-h-[800px] w-full bg-[url('/src/assets/HeaderBildHelene.png')] bg-cover bg-center bg-no-repeat">
-        <nav className=" lg:text-lg mx-12 flex flex-wrap items-center justify-between pt-8">
-          <img src="/src/assets/LogoWeiss.svg" className=" h-16 sm:h-14 md:h-16 lg:h-20 xl:h-24  "></img>
+      <nav className="  flex flex-wrap items-center justify-between pt-8 lg:text-lg">
+        <img
+          src="/src/assets/LogoWeiss.svg"
+          className=" z-10  pl-20 sm:h-28 md:h-20 lg:h-24 xl:h-28 2xl:h-32 "
+        ></img>
 
+        <div className="pr-16">
           <div className="hidden  font-serif text-lg md:flex ">
-            {/* Desktop Links */}
-         
-            <a
-              href="#"
-              className=" sm:text-sm md:text-md lg:text-lg lg:mx-4 xl:mx-8 xl:text-xl 2xl:text-2xl after:transition-width relative mx-4 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0"
+            <Link
+              to="/"
+              className="  md:text-md after:transition-width relative mx-4 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0 sm:mx-2 sm:text-sm lg:mx-4 lg:text-lg xl:mx-8 xl:text-xl 2xl:text-2xl"
             >
               HOME
-            </a>
+            </Link>
 
-            <a
-              href="#"
-              className="  sm:text-sm sm:mx-2 md:text-md lg:text-lg lg:mx-4 xl:text-xl xl:mx-8 2xl:text-2xl after:transition-width relative mx-4 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0"
+            <Link
+              to="/#Anker1"
+              className="  md:text-md after:transition-width relative mx-4 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0 sm:mx-2 sm:text-sm lg:mx-4 lg:text-lg xl:mx-8 xl:text-xl 2xl:text-2xl"
             >
               ÜBER MICH
-            </a>
-            <a
-              href="#"
-              className="  sm:text-sm sm:mx-2 md:text-md lg:text-lg lg:mx-4 xl:text-xl xl:mx-8 2xl:text-2xl after:transition-width relative mx-4 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0"
+            </Link>
+
+            <Link
+              to="/#AnkerPortfolio"
+              className="  md:text-md after:transition-width relative mx-4 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0 sm:mx-2 sm:text-sm lg:mx-4 lg:text-lg xl:mx-8 xl:text-xl 2xl:text-2xl"
             >
               PORTFOLIO
-            </a>
-            <a
-              href="#"
-              className="  sm:text-sm sm:mx-2 md:text-md lg:text-lg lg:mx-4 xl:text-xl xl:mx-8 2xl:text-2xl after:transition-width relative mx-4 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0"
+            </Link>
+
+            <Link
+              to="/leistungen"
+              className="  md:text-md after:transition-width relative mx-4 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0 sm:mx-2 sm:text-sm lg:mx-4 lg:text-lg xl:mx-8 xl:text-xl 2xl:text-2xl"
             >
               LEISTUNGEN
-            </a>
-            <a
-              href="#"
-              className="sm:text-sm sm:mx-2 md:text-md lg:text-lg lg:mx-4 xl:text-xl xl:mx-8 2xl:text-2xl after:transition-width relative mx-4 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0"
+            </Link>
+
+            <Link
+              to="/#AnkerKontakt"
+              className="  md:text-md after:transition-width relative mx-4 block w-fit py-2 text-2xl text-white after:absolute after:left-1/2 after:right-1/2 after:block after:h-[1px] after:bg-custom-hover after:duration-300 after:content-[''] hover:after:left-0 hover:after:right-0 sm:mx-2 sm:text-sm lg:mx-4 lg:text-lg xl:mx-8 xl:text-xl 2xl:text-2xl"
             >
               KONTAKT
-            </a>
+            </Link>
             <CiInstagram className="pt-1" size={40} color="white" />
           </div>
 
@@ -81,20 +86,8 @@ const Navbar = () => {
               Contact
             </a>
           </div>
-        </nav>
-
-        <div className="sm:ml-12 lg:ml-36 ml-36 mt-32 grid grid-rows-3 gap-8">
-          <h1 className="sm:text-5xl lg:text-6xl font-serif text-7xl font-extrabold text-white">
-            Ihre Momente.
-          </h1>
-          <h1 className="sm:text-5xl lg:text-6xl font-serif text-7xl font-extrabold text-white">
-            Festgehalten für die Ewigkeit.
-          </h1>
-          <button className=" h-auto w-52 rounded-lg border border-white bg-transparent font-serif  text-xl font-semibold text-white transition duration-500 ease-in-out	  hover:border-transparent hover:bg-white hover:text-black ">
-            Kontakt
-          </button>
         </div>
-      </div>
+      </nav>
     </>
   );
 };

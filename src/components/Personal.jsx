@@ -6,7 +6,12 @@ const Personal = () => {
       <div className="mt-32 grid grid-cols-6">
         <div></div>
         <div className="col-span-2">
-          <h2 className=" font-serif text-6xl font-thin	">Hi, ich bin Lara</h2>
+          <h2
+            className=" scroll-smooth font-serif text-6xl	font-thin"
+            id="Anker1"
+          >
+            Hi, ich bin Lara
+          </h2>
         </div>
       </div>
 
