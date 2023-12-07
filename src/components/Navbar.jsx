@@ -16,7 +16,7 @@ const Navbar = () => {
     <>
       <nav className="  flex flex-wrap items-center justify-between pt-8 lg:text-lg">
         <img
-          src="/src/assets/LogoWeiss.svg"
+          src={"/src/assets/LogoWeiss.svg"}
           className=" z-10  pl-20 sm:h-28 md:h-20 lg:h-24 xl:h-28 2xl:h-32 "
         ></img>
 
