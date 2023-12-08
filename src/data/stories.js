@@ -5,9 +5,9 @@ const stories = [
     title: "Gartenhochzeit in Leipzig",
     description: "Helene & Joshua",
     images: [
-      { imageUrl: "/public/Helene1.jpg" },
+      { imageUrl: "/src/assets/BilderSeiten/Helene2.jpg },
 
-      { imageUrl: "/src/assets/BilderSeiten/Helene/Helene2.jpg" },
+      { imageUrl: "/src/assets/BilderSeiten/Helene2.jpg" },
       { imageUrl: "/src/assets/BilderSeiten/Helene/Helene4.jpg" },
       { imageUrl: "/src/assets/BilderSeiten/Helene/Helene5.jpg" },
       { imageUrl: "/src/assets/BilderSeiten/Helene/Helene6.jpg" },
