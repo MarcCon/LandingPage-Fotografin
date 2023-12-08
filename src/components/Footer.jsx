@@ -11,7 +11,7 @@ const Footer = () => {
           >
             So erreichen Sie mich
           </h2>
-          <p class=" mb-8 text-center font-light text-white sm:text-xl lg:mb-16">
+          <p class=" mb-8 text-center font-serif text-white sm:text-xl lg:mb-16">
             Schreiben Sie mir gerne eine Nachricht, ich antworte so schnell wie
             möglich.
           </p>
@@ -19,7 +19,7 @@ const Footer = () => {
             <div>
               <label
                 for="email"
-                class="mb-2 block text-sm font-medium text-white"
+                class="mb-2 block font-serif text-sm text-white"
               >
                 Ihre E-Mail
               </label>
@@ -35,7 +35,7 @@ const Footer = () => {
             <div class="sm:col-span-2">
               <label
                 for="message"
-                class="mb-2 block text-sm font-medium text-white"
+                class="mb-2 block font-serif text-sm text-white"
               >
                 Ihre Nachricht
               </label>
