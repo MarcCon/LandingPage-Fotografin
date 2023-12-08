@@ -21,7 +21,7 @@ export default function Carousel() {
     return () => clearInterval(interval); // Bereinigung des Intervals beim Unmount
   }, []);
 
-  // Berechnet den Versatz für die Transformation
+  // Berechnet den Versatz für die Transformationd
   const getTransformOffset = () => {
     let offset = (-currentImage * 100) / 3;
     if (currentImage >= originalImages.length) {
