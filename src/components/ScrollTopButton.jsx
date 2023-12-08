@@ -32,7 +32,7 @@ const ScrollTopButton = () => {
 
   return (
     <div
-      className={`fixed bottom-10 right-10 ${
+      className={`fixed bottom-10 right-10 z-20 ${
         isVisible ? "opacity-100 duration-300 ease-in" : "opacity-0"
       }`}
     >
