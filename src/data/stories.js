@@ -11,7 +11,7 @@ const stories = [
       { imageUrl: "/BilderSeiten/Helene/Helene5.jpg" },
       { imageUrl: "/BilderSeiten/Helene/Helene6.jpg" },
       { imageUrl: "/BilderSeiten/Helene/Helene7.jpg" },
-      { imageUrl: "/BilderSeiten/Helene/Helene8.jpg" },
+
       { imageUrl: "/BilderSeiten/Helene/Helene9.jpg" },
       { imageUrl: "/BilderSeiten/Helene/Helene10.jpg" },
       { imageUrl: "/BilderSeiten/Helene/Helene11.jpg" },
