@@ -19,22 +19,24 @@ const StorySite = () => {
           <Navbar />
         </div>
       </div>
+
       <div>
         <div className="mt-16 flex justify-center font-serif text-5xl">
           <h1>{story.description}</h1>
         </div>
-
-        <div className="columns-2 p-64 md:columns-3 lg:columns-3">
-          {storyImages.map((image, index) => (
-            <div key={index} className="grid gap-4">
-              <LazyImage
-                className="mb-4 h-auto max-w-full rounded-lg"
-                src={image.imageUrl}
-                alt={`Bild ${index + 1}`}
-                loading="lazy"
-              />
-            </div>
-          ))}
+        <div className="mx-32">
+          <div className=" columns-1 gap-5 sm:columns-2 sm:gap-8 md:columns-3 lg:columns-3 [&>img:not(:first-child)]:mt-8">
+            {storyImages.map((image, index) => (
+              <div key={index} className="grid gap-4">
+                <img
+                  className="mb-4 h-auto max-w-full rounded-lg"
+                  src={image.imageUrl}
+                  alt={`Bild ${index + 1}`}
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>
