@@ -2,7 +2,7 @@ import React from "react";
 
 const HeaderHomePage = () => {
   return (
-    <div className="h-[1000px] bg-[url('/src/assets/HeaderBildHelene.png')] bg-cover bg-center bg-no-repeat">
+    <div className="h-[1000px] bg-[url('/HeaderBildHelene.png')] bg-cover bg-center bg-no-repeat">
       <div className=" grid h-full grid-rows-3	">
         <div></div>
         <div className=" pl-32 font-serif text-7xl  text-white sm:text-4xl md:text-5xl lg:text-6xl  xl:text-7xl 2xl:text-7xl">

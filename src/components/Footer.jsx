@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <section class=" h-full w-full border-t-2 bg-[url('/src/assets/FooterPic.jpeg')]  bg-cover bg-center bg-no-repeat">
+      <section class=" h-full w-full border-t-2 bg-[url('/FooterPic.jpeg')]  bg-cover bg-center bg-no-repeat">
         <div class="mx-auto max-w-screen-md px-4 py-8 lg:py-16">
           <h2
             id="AnkerKontakt"

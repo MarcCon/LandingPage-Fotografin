@@ -18,7 +18,7 @@ const Personal = () => {
       <div className=" my-24 grid grid-cols-7">
         <div></div>
         <div className=" col-span-2 ml-24 w-3/4">
-          <img src="src/assets/laraSymbol.png" />
+          <img src="/laraSymbol.png" />
         </div>
         <div></div>
         <div className="col-span-2 text-left font-serif  text-4xl tracking-wide	">
