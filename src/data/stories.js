@@ -1,7 +1,7 @@
 const stories = [
   {
     id: 1,
-    imageUrl: "src/assets/BilderSeiten/Helene/titelbildhelene.jpg",
+    imageUrl: "BilderSeiten/Helene/titelbildhelene.jpg",
     title: "Gartenhochzeit in Leipzig",
     description: "Helene & Joshua",
     images: [
