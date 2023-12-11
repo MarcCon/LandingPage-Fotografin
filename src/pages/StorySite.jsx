@@ -1,21 +1,28 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import stories from "../data/stories";
 import Navbar from "../components/Navbar";
 import HeaderStory from "../components/HeaderStory";
-import LazyImage from "../components/LazyImage";
+import { PhotoAlbum } from "react-photo-album";
 
 const StorySite = () => {
   const { id } = useParams();
   const story = stories.find((story) => story.id === parseInt(id));
   const storyImages = story?.images || [];
 
+  // Bereiten Sie die Bilddaten für das PhotoAlbum vor
+  const photos = storyImages.map((image, index) => ({
+    src: image.imageUrl,
+    alt: `Bild ${index + 1}`,
+    width: image.width, // Stellen Sie sicher, dass diese Werte korrekt sind
+    height: image.height, // Stellen Sie sicher, dass diese Werte korrekt sind
+  }));
+
   return (
     <>
       <div className="relative">
         <HeaderStory />
         <div className="absolute left-0 top-0 w-full">
-          {/* Navbar über dem Header */}
           <Navbar />
         </div>
       </div>
@@ -25,18 +32,12 @@ const StorySite = () => {
           <h1>{story.description}</h1>
         </div>
         <div className="mx-32">
-          <div className=" columns-1 gap-5 sm:columns-2 sm:gap-8 md:columns-3 lg:columns-3 [&>img:not(:first-child)]:mt-8">
-            {storyImages.map((image, index) => (
-              <div key={index} className="grid gap-4">
-                <img
-                  className="mb-4 h-auto max-w-full rounded-lg"
-                  src={image.imageUrl}
-                  alt={`Bild ${index + 1}`}
-                  loading="lazy"
-                />
-              </div>
-            ))}
-          </div>
+          {/* Verwenden Sie PhotoAlbum zur Anzeige der Bilder */}
+          <PhotoAlbum
+            layout="masonry" // Masonry-Layout beibehalten
+            photos={photos}
+            columns={3} // Setzen Sie die Anzahl der Spalten auf 3
+          />
         </div>
       </div>
     </>
