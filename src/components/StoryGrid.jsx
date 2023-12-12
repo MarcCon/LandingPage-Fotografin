@@ -14,7 +14,7 @@ const StoryGrid = () => {
       <h2 className="mb-4 text-center font-serif text-5xl font-light  ">
         Die letzten Storys
       </h2>
-      <div className="grid grid-cols-3 gap-8 pl-64 pr-64  ">
+      <div className="mx-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3  ">
         {stories.map((story) => (
           <Story
             key={story.id}

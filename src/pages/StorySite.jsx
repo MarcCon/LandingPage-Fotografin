@@ -33,11 +33,13 @@ const StorySite = () => {
         </div>
         <div className="mx-32">
           {/* Verwenden Sie PhotoAlbum zur Anzeige der Bilder */}
-          <PhotoAlbum
-            layout="masonry" // Masonry-Layout beibehalten
-            photos={photos}
-            columns={3} // Setzen Sie die Anzahl der Spalten auf 3
-          />
+          <div className="mt-16">
+            <PhotoAlbum
+              layout="masonry" // Masonry-Layout beibehalten
+              photos={photos}
+              columns={3} // Setzen Sie die Anzahl der Spalten auf 3
+            />
+          </div>
         </div>
       </div>
     </>
