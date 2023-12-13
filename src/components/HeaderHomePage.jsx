@@ -6,9 +6,9 @@ const HeaderHomePage = () => {
       <div className="items-left ml-8 flex h-full flex-col justify-center xl:ml-32 2xl:ml-32">
         <div className="font-serif text-4xl text-white  sm:text-4xl  md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl">
           <h1 class="leading-snug">
-            Ihre Momente.
+            Jeder Augenblick. Jedes Lächeln.
             <br />
-            Festgehalten für Immer.
+            Für immer festgehalten.
           </h1>
         </div>
         <div className=" text-md l:text-3xl font-serif sm:text-xl md:text-xl lg:text-2xl 2xl:text-3xl ">

@@ -1,6 +1,5 @@
 import React from "react";
 
-// Komponente für ein einzelnes Bild mit dynamischer Breite und Höhe
 const Moments = () => {
   return (
     <div className="mb-8 mt-8 h-full bg-background-blue pb-16 md:mb-16 md:mt-16 lg:mb-32 lg:mt-32">

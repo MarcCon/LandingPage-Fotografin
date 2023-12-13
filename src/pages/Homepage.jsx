@@ -9,6 +9,8 @@ import Navbar from "../components/Navbar";
 import ScrollTopButton from "../components/ScrollTopButton";
 import Moments from "../components/Moments";
 import Service from "../components/Service";
+import { motion } from "framer-motion";
+import FadeInUpAnimation from "../components/FadeInUp";
 
 const Homepage = () => {
   return (
@@ -21,11 +23,15 @@ const Homepage = () => {
           <Navbar />
         </div>
       </div>
-      <Personal />
-      <ScrollTopButton />
+      <FadeInUpAnimation>
+        <Personal />
+      </FadeInUpAnimation>
+
       <Moments />
       <Service />
       <StoryGrid />
+      <ScrollTopButton />
+
       <Footer />
     </>
   );
