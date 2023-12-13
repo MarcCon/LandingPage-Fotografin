@@ -7,6 +7,8 @@ import Footer from "../components/Footer";
 import HeaderHomePage from "../components/HeaderHomePage";
 import Navbar from "../components/Navbar";
 import ScrollTopButton from "../components/ScrollTopButton";
+import Moments from "../components/Moments";
+import Service from "../components/Service";
 
 const Homepage = () => {
   return (
@@ -21,8 +23,8 @@ const Homepage = () => {
       </div>
       <Personal />
       <ScrollTopButton />
-      <Carousel />
-      <Divider />
+      <Moments />
+      <Service />
       <StoryGrid />
       <Footer />
     </>

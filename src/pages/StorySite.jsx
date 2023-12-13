@@ -31,13 +31,16 @@ const StorySite = () => {
         <div className="mt-16 flex justify-center font-serif text-5xl">
           <h1>{story.description}</h1>
         </div>
-        <div className="mx-32">
-          {/* Verwenden Sie PhotoAlbum zur Anzeige der Bilder */}
+        <div className="mx-8 xl:mx-20 2xl:mx-32">
           <div className="mt-16">
             <PhotoAlbum
-              layout="masonry" // Masonry-Layout beibehalten
+              layout="masonry"
               photos={photos}
-              columns={3} // Setzen Sie die Anzahl der Spalten auf 3
+              columns={(containerWidth) => {
+                if (containerWidth < 400) return 1;
+                if (containerWidth < 1000) return 2;
+                return 3;
+              }}
             />
           </div>
         </div>
