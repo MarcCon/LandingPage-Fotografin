@@ -17,7 +17,7 @@ const Navbar = () => {
       <nav className="  flex flex-wrap items-center justify-between pt-8 lg:text-lg">
         <img
           src={"/LogoWeiss.svg"}
-          className=" z-10  ml-20 sm:h-28 md:h-20 lg:h-24 xl:h-28 2xl:h-32 "
+          className="z-10 ml-8 h-20 md:h-20 lg:h-24 xl:ml-32 xl:h-28 2xl:h-32"
         ></img>
 
         <div className="pr-16">
@@ -63,29 +63,28 @@ const Navbar = () => {
             {/* Hamburger Menu */}
             <RxHamburgerMenu
               size={30}
-              className="text-red"
+              className="text-white"
               onClick={toggleMenu}
             />
           </div>
-          <div
-            className={`absolute right-0 top-0 flex  h-screen w-60  flex-col gap-5 bg-blue-400 py-2 text-2xl transition-all duration-500 ease-in-out md:hidden ${
-              isOpen ? "translate-x-0" : "translate-x-full"
-            }`}
-          >
-            <AiOutlineClose
-              className="text-blue absolute right-2 top-2 duration-150 hover:text-red-400 "
-              onClick={() => setIsOpen(false)}
-            />
-            <a href="#" className="block text-center text-white ">
-              Home
-            </a>
-            <a href="#" className="block text-center text-white ">
-              About
-            </a>
-            <a href="#" className="block text-center text-white ">
-              Contact
-            </a>
-          </div>
+
+          {isOpen && (
+            <div className="absolute right-0 top-0 flex h-screen w-60 flex-col gap-5 bg-blue-400 py-2 text-2xl transition-all duration-500 ease-in-out md:hidden">
+              <AiOutlineClose
+                className="text-blue absolute right-2 top-2 duration-150 hover:text-red-400 "
+                onClick={() => setIsOpen(false)}
+              />
+              <a href="#" className="block text-center text-white ">
+                Home
+              </a>
+              <a href="#" className="block text-center text-white ">
+                About
+              </a>
+              <a href="#" className="block text-center text-white ">
+                Contact
+              </a>
+            </div>
+          )}
         </div>
       </nav>
     </>
