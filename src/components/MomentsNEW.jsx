@@ -4,7 +4,7 @@ const MomentsNEW = () => {
   return (
     <div className="mb-8 mt-8 h-full bg-background-blue pb-16 md:mb-16 md:mt-16 lg:mb-32 lg:mt-32">
       <div className="mx-auto w-[85%]">
-        <div className=" mb-8 pt-4 text-center font-serif text-2xl sm:text-3xl md:text-4xl lg:mb-0 lg:text-left  lg:text-5xl 2xl:mb-16 ">
+        <div className=" mb-8 pt-4 text-center font-serif text-3xl sm:text-3xl md:text-4xl lg:mb-0 lg:text-left  lg:text-5xl 2xl:mb-16 ">
           <h3>MIT MEINER KAMERA HALTE ICH</h3>
           <h3>DIE SCHÖNSTEN MOMENTE FEST</h3>
         </div>
@@ -18,7 +18,9 @@ const MomentsNEW = () => {
             className="mx-8 my-8 h-[1px] w-full lg:h-[400px] lg:w-[1px] xl:mx-16 xl:h-[500px] 2xl:h-[600px]"
           />
           <div className=" text-center font-serif lg:pt-24 ">
-            <h3 className="mb-8 text-5xl">Licht, Kamera, Emotionen.</h3>
+            <h3 className="mb-8 text-4xl sm:text-5xl">
+              Licht, Kamera, Emotionen.
+            </h3>
             <div>
               <h3 className=" text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed

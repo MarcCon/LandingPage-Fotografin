@@ -8,7 +8,7 @@ const StoryGrid = () => {
       <h3 className="text-center font-serif text-3xl font-light text-yellow-500">
         Meine Zeitreise
       </h3>
-      <h2 className="mb-4 text-center font-serif text-5xl font-light">
+      <h2 className="mb-4 text-center font-serif text-4xl font-light md:text-5xl">
         Die letzten Storys
       </h2>
       <div className="mx-4 grid grid-cols-2 gap-8  sm:mx-4 sm:grid-cols-2 md:mx-4 lg:mx-4 lg:grid-cols-3 xl:mx-32 xl:gap-8 2xl:mx-44">
