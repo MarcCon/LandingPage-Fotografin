@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="mt-24">
       <section class=" h-full w-full border-t-2 bg-[url('/FooterPic.jpg')]  bg-cover bg-center bg-no-repeat">
         <div class="mx-auto max-w-screen-md px-4 py-8 lg:py-16">
           <h2

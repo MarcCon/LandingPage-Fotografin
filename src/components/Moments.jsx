@@ -18,13 +18,15 @@ const Moments = () => {
         />
         <div className="pl-4 pt-24 text-center font-serif ">
           <h3 className="mb-8 text-5xl">Licht, Kamera, Emotionen.</h3>
-          <h3 className="text-3xl lg:text-xl xl:text-2xl 2xl:text-3xl">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet.
-          </h3>
+          <div>
+            <h3 className="text-3xl lg:text-xl xl:text-2xl 2xl:text-3xl">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet.
+            </h3>
+          </div>
           <button className="mt-8 border border-black bg-transparent p-2 px-6 font-serif  text-lg transition duration-200 ease-in-out hover:border-yellow-500">
             Mehr Ansehen
           </button>

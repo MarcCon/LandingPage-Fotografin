@@ -4,6 +4,7 @@ import stories from "../data/stories";
 import Navbar from "../components/Navbar";
 import HeaderStory from "../components/HeaderStory";
 import { PhotoAlbum } from "react-photo-album";
+import Footer from "../components/Footer";
 
 const StorySite = () => {
   const { id } = useParams();
@@ -45,6 +46,8 @@ const StorySite = () => {
           </div>
         </div>
       </div>
+
+      <Footer />
     </>
   );
 };

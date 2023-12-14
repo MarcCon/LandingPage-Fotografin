@@ -12,6 +12,7 @@ import Service from "../components/Service";
 import { motion } from "framer-motion";
 import FadeInUpAnimation from "../components/FadeInUp";
 import PersonalNEW from "../components/PersonalNEW";
+import MomentsNEW from "../components/MomentsNEW";
 
 const Homepage = () => {
   return (
@@ -27,7 +28,7 @@ const Homepage = () => {
 
       <PersonalNEW />
 
-      <Moments />
+      <MomentsNEW />
       <Service />
       <StoryGrid />
       <ScrollTopButton />
