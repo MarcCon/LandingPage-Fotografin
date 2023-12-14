@@ -9,7 +9,7 @@ const Story = ({ imageUrl, title, description, id }) => {
           <img
             src={imageUrl}
             alt={title}
-            className="mb-4 h-60 w-auto cursor-pointer object-cover duration-500 ease-in-out hover:scale-110 sm:h-80 sm:w-80"
+            className="mb-4 h-[200px] w-[250px] cursor-pointer object-cover duration-500 ease-in-out hover:scale-110 sm:h-80 sm:w-80"
           />
         </Link>
       </div>
