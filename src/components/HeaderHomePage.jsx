@@ -4,7 +4,7 @@ const HeaderHomePage = () => {
   return (
     <div className="h-[500px] bg-[url('/HeaderBildHelene.jpg')] bg-cover bg-center bg-no-repeat sm:h-[500px] md:h-[500px] lg:h-[600px] xl:h-[700px] 2xl:h-[800px]">
       <div className="items-left ml-8 flex h-full flex-col justify-center xl:ml-32 2xl:ml-32">
-        <div className="font-serif text-4xl text-white  sm:text-4xl  md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl">
+        <div className="mt-16 font-serif text-4xl text-white sm:mt-0 sm:text-4xl  md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl">
           <h1 class="leading-snug">
             Jeder Augenblick. Jedes Lächeln.
             <br />
