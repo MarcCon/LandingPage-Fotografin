@@ -10,7 +10,7 @@ const Moments = () => {
       <div className="flex flex-col items-center justify-between lg:mx-32 lg:flex-row">
         <img
           src="/MomentsGruppePic.png"
-          className="h-auto w-full lg:h-[40vh] lg:w-[60vh] xl:h-[50vh] xl:w-[70vh] 2xl:h-[70vh] 2xl:w-[100vh]"
+          className="h-auto w-full lg:h-[40vh] lg:w-[60vh] xl:h-[70vh] xl:w-[100vh] 2xl:h-[70vh] 2xl:w-[100vh]"
         />
         <img
           src="/Line.jpg"

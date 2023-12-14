@@ -11,6 +11,7 @@ import Moments from "../components/Moments";
 import Service from "../components/Service";
 import { motion } from "framer-motion";
 import FadeInUpAnimation from "../components/FadeInUp";
+import PersonalNEW from "../components/PersonalNEW";
 
 const Homepage = () => {
   return (
@@ -23,9 +24,8 @@ const Homepage = () => {
           <Navbar />
         </div>
       </div>
-      <FadeInUpAnimation>
-        <Personal />
-      </FadeInUpAnimation>
+
+      <PersonalNEW />
 
       <Moments />
       <Service />
