@@ -25,7 +25,7 @@ const Moments = () => {
             et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
             Lorem ipsum dolor sit amet.
           </h3>
-          <button className="mt-8 border border-black bg-transparent px-2 py-2 text-3xl transition duration-200 ease-in-out hover:border-yellow-500">
+          <button className="mt-8 border border-black bg-transparent p-2 px-6 font-serif  text-lg transition duration-200 ease-in-out hover:border-yellow-500">
             Mehr Ansehen
           </button>
         </div>

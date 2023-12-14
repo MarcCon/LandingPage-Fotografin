@@ -12,7 +12,7 @@ const HeaderHomePage = () => {
           </h1>
         </div>
         <div className=" text-md l:text-3xl font-serif sm:text-xl md:text-xl lg:text-2xl 2xl:text-3xl ">
-          <button className=" mt-8 h-auto w-auto rounded-lg border border-white bg-transparent p-2 px-12   font-semibold text-white transition duration-500 ease-in-out hover:bg-white hover:text-black ">
+          <button className=" mt-8 h-auto w-auto rounded-lg border border-white bg-transparent p-2 px-12   font-thin text-white transition duration-500 ease-in-out hover:bg-white hover:text-black ">
             Kontakt
           </button>
         </div>
