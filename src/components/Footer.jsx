@@ -1,8 +1,28 @@
 import React from "react";
-
+import emailjs from "@emailjs/browser";
 const Footer = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_l8qsyyc",
+        "template_5t6yoqy",
+        e.target,
+        "4IJZ6aZDzSTGDMYIG",
+      )
+      .then(
+        (result) => {
+          console.log("Email successfully sent!", result.text);
+        },
+        (error) => {
+          console.log("Failed to send email.", error.text);
+        },
+      );
+  };
+
   return (
-    <div className="mt-24">
+    <div>
       <section class=" h-full w-full border-t-2 bg-[url('/FooterPic.jpg')]  bg-cover bg-center bg-no-repeat">
         <div class="mx-auto max-w-screen-md px-4 py-8 lg:py-16">
           <h2
@@ -15,7 +35,7 @@ const Footer = () => {
             Schreiben Sie mir gerne eine Nachricht, ich antworte so schnell wie
             möglich.
           </p>
-          <form action="#" class="space-y-8">
+          <form action="#" onSubmit={sendEmail} class="space-y-8">
             <div>
               <label
                 for="email"
@@ -25,7 +45,8 @@ const Footer = () => {
               </label>
               <input
                 type="email"
-                id="email"
+                id="email_from"
+                name="email_from"
                 class="  block w-full rounded-lg border border-white bg-footer-input1 p-2.5 text-sm text-white shadow-sm focus:border-white focus:ring-white "
                 placeholder="E-Mail"
                 required
@@ -41,6 +62,7 @@ const Footer = () => {
               </label>
               <textarea
                 id="message"
+                name="message"
                 rows="6"
                 class="  block w-full rounded-lg border border-white bg-footer-input1 p-2.5 text-sm text-white shadow-sm focus:border-white focus:ring-white "
                 placeholder="Schreiben sie mir..."

@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         serif: ["Inria Serif", "serif"],
+        modern: ["Fjalla One", "sans-serif"],
       },
 
       backgroundColor: {
