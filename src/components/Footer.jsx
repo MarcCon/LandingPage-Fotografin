@@ -6,10 +6,10 @@ const Footer = () => {
 
     emailjs
       .sendForm(
-        "service_l8qsyyc",
-        "template_5t6yoqy",
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         e.target,
-        "4IJZ6aZDzSTGDMYIG",
+        process.env.REACT_APP_EMAILJS_USER_ID,
       )
       .then(
         (result) => {
@@ -23,54 +23,54 @@ const Footer = () => {
 
   return (
     <div>
-      <section class=" h-full w-full border-t-2 bg-[url('/FooterPic.jpg')]  bg-cover bg-center bg-no-repeat">
-        <div class="mx-auto max-w-screen-md px-4 py-8 lg:py-16">
+      <section className=" h-full w-full border-t-2 bg-[url('/FooterPic.jpg')]  bg-cover bg-center bg-no-repeat">
+        <div className="mx-auto max-w-screen-md px-4 py-8 lg:py-16">
           <h2
             id="AnkerKontakt"
-            class="b mb-4 text-center font-serif text-4xl tracking-tight text-white"
+            className="b mb-4 text-center font-serif text-4xl tracking-tight text-white"
           >
-            So erreichen Sie mich
+            So erreichst Du mich
           </h2>
-          <p class=" mb-8 text-center font-serif text-white sm:text-xl lg:mb-16">
-            Schreiben Sie mir gerne eine Nachricht, ich antworte so schnell wie
+          <p className=" mb-8 text-center font-serif text-white sm:text-xl lg:mb-16">
+            Schreibe mir gerne eine Nachricht, ich antworte so schnell wie
             möglich.
           </p>
-          <form action="#" onSubmit={sendEmail} class="space-y-8">
+          <form action="#" onSubmit={sendEmail} className="space-y-8">
             <div>
               <label
                 for="email"
-                class="mb-2 block font-serif text-sm text-white"
+                className="mb-2 block font-serif text-sm text-white"
               >
-                Ihre E-Mail
+                Deine E-Mail Adresse
               </label>
               <input
                 type="email"
                 id="email_from"
                 name="email_from"
-                class="  block w-full rounded-lg border border-white bg-footer-input1 p-2.5 text-sm text-white shadow-sm focus:border-white focus:ring-white "
+                className="  block w-full rounded-lg border border-white bg-footer-input1 p-2.5 text-sm text-white shadow-sm focus:border-white focus:ring-white "
                 placeholder="E-Mail"
                 required
               />
             </div>
 
-            <div class="sm:col-span-2">
+            <div className="sm:col-span-2">
               <label
                 for="message"
-                class="mb-2 block font-serif text-sm text-white"
+                className="mb-2 block font-serif text-sm text-white"
               >
-                Ihre Nachricht
+                Deine Nachricht
               </label>
               <textarea
                 id="message"
                 name="message"
                 rows="6"
-                class="  block w-full rounded-lg border border-white bg-footer-input1 p-2.5 text-sm text-white shadow-sm focus:border-white focus:ring-white "
+                className="  block w-full rounded-lg border border-white bg-footer-input1 p-2.5 text-sm text-white shadow-sm focus:border-white focus:ring-white "
                 placeholder="Schreiben sie mir..."
               ></textarea>
             </div>
             <button
               type="submit"
-              class="h-12 w-52 rounded-lg border border-white bg-transparent font-serif  text-xl font-semibold text-white transition duration-500 ease-in-out	  hover:border-transparent hover:bg-white hover:text-black "
+              className="h-12 w-52 rounded-lg border border-white bg-transparent font-serif  text-xl font-semibold text-white transition duration-500 ease-in-out	  hover:border-transparent hover:bg-white hover:text-black "
             >
               Senden
             </button>

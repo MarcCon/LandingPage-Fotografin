@@ -4,7 +4,6 @@ import { IoIosArrowDropup } from "react-icons/io";
 const ScrollTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Überwachen des Scroll-Status der Seite
   const toggleVisibility = () => {
     if (window.pageYOffset > 300) {
       setIsVisible(true);
@@ -13,7 +12,6 @@ const ScrollTopButton = () => {
     }
   };
 
-  // Funktion, um zum Seitenanfang zu scrollen
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -21,7 +19,6 @@ const ScrollTopButton = () => {
     });
   };
 
-  // Hinzufügen des EventListeners beim Mounten und Entfernen beim Unmounten
   useEffect(() => {
     window.addEventListener("scroll", toggleVisibility);
 

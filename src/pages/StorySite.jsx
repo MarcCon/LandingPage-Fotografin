@@ -11,12 +11,11 @@ const StorySite = () => {
   const story = stories.find((story) => story.id === parseInt(id));
   const storyImages = story?.images || [];
 
-  // Bereiten Sie die Bilddaten für das PhotoAlbum vor
   const photos = storyImages.map((image, index) => ({
     src: image.imageUrl,
     alt: `Bild ${index + 1}`,
-    width: image.width, // Stellen Sie sicher, dass diese Werte korrekt sind
-    height: image.height, // Stellen Sie sicher, dass diese Werte korrekt sind
+    width: image.width,
+    height: image.height,
   }));
 
   return (
