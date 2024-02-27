@@ -41,7 +41,7 @@ const ServiceBox = ({ title, description, image, hoverImage }) => {
 
 const Service = () => {
   return (
-    <div className="mx-auto w-[85%]">
+    <div className="xs:w-[85%] mx-auto sm:w-[85%] md:w-[85%] lg:w-[85%] xl:w-[75%] 2xl:w-[1000px] ">
       <h3
         id="AnkerLeistungen"
         className="text-center font-serif text-5xl text-yellow-500 sm:text-2xl md:text-3xl lg:text-4xl xl:text-3xl"
