@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 const Story = ({ imageUrl, title, description, id }) => {
   return (
     <div key={id} className="flex flex-col items-center">
-      <div className="flex h-[250px] overflow-hidden sm:h-80">
+      <div className="flex h-[200px] overflow-hidden md:h-[300px]">
         <Link to={`/seite/${id}`}>
           <img
             src={imageUrl}
             alt={title}
-            className="mb-4 h-[250px] w-[250px] cursor-pointer object-cover duration-500 ease-in-out hover:scale-110 sm:h-80 sm:w-80"
+            className="mb-4 h-full w-[250px] cursor-pointer object-cover duration-500 ease-in-out hover:scale-110 sm:h-80 sm:w-80"
           />
         </Link>
       </div>

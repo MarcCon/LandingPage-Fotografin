@@ -7,7 +7,7 @@ const ServiceBox = ({ title, description, image, hoverImage }) => {
     <div
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="relative h-[450px] w-full max-w-sm flex-1 rounded-lg border border-gray-200 bg-white p-4 shadow-md transition-shadow duration-300 ease-in-out hover:shadow-xl sm:h-[300px] md:h-[350px] lg:h-[400px] xl:h-[450px]"
+      className="relative h-[370px] w-full max-w-sm flex-1 rounded-lg border border-gray-200 bg-white p-4 shadow-md transition-shadow duration-300 ease-in-out hover:shadow-xl sm:h-[300px] md:h-[350px] lg:h-[400px] xl:h-[450px]"
     >
       <div className="flex h-[70px] flex-col sm:h-[40px] md:h-[50px] lg:h-[60px] xl:h-[70px]">
         <img
@@ -41,7 +41,7 @@ const ServiceBox = ({ title, description, image, hoverImage }) => {
 
 const Service = () => {
   return (
-    <div className="xs:w-[85%] mx-auto sm:w-[85%] md:w-[85%] lg:w-[85%] xl:w-[75%] 2xl:w-[1000px] ">
+    <div className="mx-auto w-[350px] sm:w-[85%] md:w-[85%] lg:w-[85%] xl:w-[75%] 2xl:w-[1000px] ">
       <h3
         id="AnkerLeistungen"
         className="text-center font-serif text-5xl text-yellow-500 sm:text-2xl md:text-3xl lg:text-4xl xl:text-3xl"

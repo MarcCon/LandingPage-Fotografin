@@ -23,9 +23,9 @@ const Navbar = () => {
         <img
           src={"/LogoWeiss.svg"}
           alt="Logo"
-          className="z-10 ml-16 h-20 md:h-20 lg:h-24 xl:ml-16 xl:h-28 2xl:ml-32 2xl:h-32"
+          className="z-10 ml-8 h-20 sm:ml-16 md:h-20 lg:h-24 xl:ml-16 xl:h-28 2xl:ml-32 2xl:h-32"
         />
-        <div className="pr-16">
+        <div className="mr-8 sm:pr-8 md:pr-16">
           <div className="hidden font-serif text-lg md:flex">
             {navLinks.map((link) => (
               <Link
