@@ -4,6 +4,7 @@ import stories from "../data/stories";
 import Navbar from "../components/Navbar";
 import HeaderStory from "../components/HeaderStory";
 import { PhotoAlbum } from "react-photo-album";
+import ModalImage from "react-modal-image";
 
 const StorySite = () => {
   const { id } = useParams();
@@ -36,10 +37,23 @@ const StorySite = () => {
               layout="masonry"
               photos={photos}
               columns={(containerWidth) => {
-                if (containerWidth < 400) return 1;
+                if (containerWidth < 400) return 2;
                 if (containerWidth < 1000) return 2;
                 return 3;
               }}
+              renderPhoto={({ photo }) => (
+                // Hinzufügen von mb-4 für den vertikalen Abstand und m-2 für den horizontalen Abstand
+                <div className="mb-4">
+                  <ModalImage
+                    small={photo.src}
+                    large={photo.src}
+                    alt={photo.alt}
+                    hideDownload={true}
+                    hideZoom={true}
+                    showRotate={false}
+                  />
+                </div>
+              )}
             />
           </div>
         </div>
