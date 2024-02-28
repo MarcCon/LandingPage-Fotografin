@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { CiInstagram } from "react-icons/ci";
 import NavbarMobil from "./NavbarMobil";
 import { HashLink as Link } from "react-router-hash-link";
 
