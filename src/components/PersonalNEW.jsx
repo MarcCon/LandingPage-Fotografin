@@ -10,7 +10,7 @@ const PersonalNEW = () => {
             HI, ICH BIN LARA
           </h1>
           <img
-            src="/public/girlStock.png"
+            src="/girlStock.png"
             className="mx-auto h-auto w-[350px] md:w-full"
           />
         </div>
