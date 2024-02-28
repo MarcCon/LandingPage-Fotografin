@@ -4,7 +4,6 @@ import stories from "../data/stories";
 import Navbar from "../components/Navbar";
 import HeaderStory from "../components/HeaderStory";
 import { PhotoAlbum } from "react-photo-album";
-import Footer from "../components/Footer";
 
 const StorySite = () => {
   const { id } = useParams();
@@ -20,7 +19,7 @@ const StorySite = () => {
 
   return (
     <>
-      <div className="relative">
+      <div>
         <HeaderStory />
         <div className="absolute left-0 top-0 w-full">
           <Navbar />
@@ -45,8 +44,6 @@ const StorySite = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };

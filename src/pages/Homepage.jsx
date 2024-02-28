@@ -8,6 +8,7 @@ import ScrollTopButton from "../components/ScrollTopButton";
 import Service from "../components/Service";
 import PersonalNEW from "../components/PersonalNEW";
 import MomentsNEW from "../components/MomentsNEW";
+import LegalFooter from "../components/LegalFooter";
 
 const Homepage = () => {
   return (
@@ -19,8 +20,8 @@ const Homepage = () => {
       <Service />
       <StoryGrid />
       <ScrollTopButton />
-
       <Footer />
+      <LegalFooter />
     </>
   );
 };
