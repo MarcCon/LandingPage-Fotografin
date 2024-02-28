@@ -3,7 +3,10 @@ import { CiInstagram, CiMail } from "react-icons/ci";
 
 const PersonalNEW = () => {
   return (
-    <div id="AnkerÜberMich" className="mx-auto my-24 w-[85%] sm:pt-8">
+    <div
+      id="AnkerÜberMich"
+      className="mx-auto my-24 w-[85%] sm:pt-8 xl:w-[65%]"
+    >
       <div className="flex flex-col  md:flex-row-reverse md:items-center">
         <div className="text-center md:basis-1/3 md:text-left">
           <h1 className="mb-8 font-serif text-6xl font-bold">
