@@ -5,38 +5,38 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const NavbarMobil = ({ isOpen, setIsOpen }) => {
   const sidebarVariants = {
-    open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: "100%" },
+    open: { opacity: 1, y: 0 },
+    closed: { opacity: 0, y: "-100%" },
   };
 
   return (
     <AnimatePresence>
       {isOpen && (
-        <motion.div
+        <motion.dive
           initial="closed"
           animate="open"
           exit="closed"
           variants={sidebarVariants}
           transition={{ duration: 0.5 }}
-          className="absolute right-0 top-0 flex h-[500px] w-60 flex-col gap-5 bg-slate-200 py-2 text-center text-2xl md:hidden"
+          className="fixed inset-0 z-50 flex flex-col gap-5 bg-slate-200 p-2 text-center text-2xl md:hidden"
         >
           <AiOutlineClose
             className="text-blue absolute right-2 top-2 duration-150 hover:text-red-400"
             onClick={() => setIsOpen(false)}
           />
-          <Link to="/" className="  ">
+          <Link to="/" className="">
             HOME
           </Link>
-          <Link to="/#AnkerÜberMich" className="  ">
+          <Link to="/#AnkerÜberMich" className="">
             ÜBER MICH
           </Link>
-          <Link to="/#AnkerPortfolio" className="  ">
-            PORTFOLIO
-          </Link>
-          <Link to="/#AnkerLeistungen" className="  ">
+          <Link to="/#AnkerLeistungen" className="">
             LEISTUNGEN
           </Link>
-          <Link to="/#AnkerKontakt" className=" ">
+          <Link to="/#AnkerPortfolio" className="">
+            PORTFOLIO
+          </Link>
+          <Link to="/#AnkerKontakt" className="">
             KONTAKT
           </Link>
         </motion.div>

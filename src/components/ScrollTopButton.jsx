@@ -29,7 +29,7 @@ const ScrollTopButton = () => {
 
   return (
     <div
-      className={`fixed bottom-10 right-10 z-20 ${
+      className={`fixed bottom-10 right-10 z-20  ${
         isVisible ? "opacity-100 duration-300 ease-in" : "opacity-0"
       }`}
     >
@@ -39,7 +39,7 @@ const ScrollTopButton = () => {
 
 "
       >
-        <IoIosArrowDropup size={50} />
+        <IoIosArrowDropup className="text-5xl md:text-6xl" />
       </button>
     </div>
   );

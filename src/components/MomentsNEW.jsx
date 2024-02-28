@@ -2,7 +2,7 @@ import React from "react";
 
 const MomentsNEW = () => {
   return (
-    <div className="my-8 h-full bg-background-blue py-16 md:my-16 lg:my-32">
+    <div className="my-8 h-full bg-background-blue md:my-16 md:py-16 lg:my-32">
       <div className="mx-auto w-[85%]">
         <div className="pt-8 text-center font-serif text-3xl md:text-4xl lg:text-left lg:text-5xl 2xl:mb-8">
           <h3>
@@ -21,7 +21,7 @@ const MomentsNEW = () => {
             className="mx-8 my-8 h-[1px] w-full lg:h-[400px] lg:w-[1px] xl:mx-16 xl:h-[500px] 2xl:h-[600px]"
           />
           <div className="text-center font-serif lg:my-auto">
-            <p className="pb-8 text-5xl text-yellow-500">Licht Kamera</p>
+            <p className="pb-8 text-5xl text-yellow-500"></p>
             <h3 className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
               Mir ist das wirklichkeitsgetreue und spontane Festhalten von
               persönlichen Momenten wichtig. Dafür lege ich großen Wert auf die
