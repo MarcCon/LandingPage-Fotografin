@@ -1,6 +1,11 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import StorySite from "./pages/StorySite";
 import Homepage from "./pages/Homepage";
 import Impressum from "./pages/Impressum";
@@ -15,6 +20,8 @@ const App = () => {
           <Route path="/seite/:id" element={<StorySite />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/datenschutz" element={<Datenschutz />} />
+          {/* Redirect von /defaultsite zur Homepage */}
+          <Route path="/defaultsite" element={<Navigate replace to="/" />} />
         </Routes>
       </Router>
     </div>
