@@ -4,7 +4,7 @@ const MomentsNEW = () => {
   return (
     <div className="my-8 h-full bg-background-blue md:my-16 md:py-16 lg:my-32">
       <div className="mx-auto w-[85%]">
-        <div className="pb-4 pt-8 text-center font-serif text-3xl md:text-4xl lg:text-left lg:text-5xl 2xl:mb-8">
+        <div className="pb-4 pt-8 text-center font-serif text-3xl md:text-3xl lg:text-left lg:text-4xl xl:text-5xl 2xl:mb-8">
           <h3>
             JEDE LIEBE UND JEDER AUGENBLICK
             <br />
