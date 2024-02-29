@@ -13,13 +13,13 @@ const PersonalNEW = () => {
             HI, ICH BIN LARA
           </h1>
           <img
-            src="/girlStock.png"
-            className="mx-auto h-auto w-[350px] md:w-full"
+            src="/Lara.JPG"
+            className="mx-auto h-auto w-[350px] rounded-2xl md:w-full"
           />
         </div>
         <div className="text-center md:mt-0 md:basis-2/3 md:text-left">
           <p className="mb-4 mt-8 font-serif text-4xl">ÜBER MICH</p>
-          <p className="pb-4 font-serif text-2xl">
+          <p className="pb-4 font-serif text-2xl xl:pr-32">
             Ich bin 21 Jahre alt und studiere in Leipzig. Seit meiner Jugend
             fotografiere ich leidenschaftlich. Vor 3 Jahren habe ich angefangen,
             mein Hobby zum Beruf zu machen, und heute fotografiere ich vor allem
