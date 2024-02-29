@@ -13,7 +13,7 @@ const PersonalNEW = () => {
             HI, ICH BIN LARA
           </h1>
           <img
-            src="/Lara.JPG"
+            src="/lara.jpeg"
             className="mx-auto h-auto w-[350px] rounded-2xl md:w-full"
           />
         </div>
