@@ -9,7 +9,7 @@ const PersonalNEW = () => {
     >
       <div className="flex flex-col  md:flex-row-reverse md:items-center">
         <div className="text-center md:basis-1/3 md:text-left">
-          <h1 className="mb-8 font-serif text-6xl font-bold">
+          <h1 className="mb-8 font-serif text-5xl font-bold">
             HI, ICH BIN LARA
           </h1>
           <img

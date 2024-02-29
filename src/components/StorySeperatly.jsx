@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 const Story = ({ imageUrl, title, description, id }) => {
   return (
-    <div key={id} className="flex flex-col items-center">
-      <div className="flex h-[200px] overflow-hidden md:h-[300px]">
+    <div key={id} className="flex h-full w-full flex-col items-center">
+      <div className=" h-[200px] w-full overflow-hidden sm:h-[300px] md:h-[300px] lg:h-[400px]">
         <Link to={`/seite/${id}`}>
           <img
             src={imageUrl}
             alt={title}
-            className="mb-4 h-full w-[250px] cursor-pointer object-cover duration-500 ease-in-out hover:scale-110 sm:h-80 sm:w-80"
+            className="h-full w-full cursor-pointer object-cover duration-500 ease-in-out hover:scale-110"
           />
         </Link>
       </div>
