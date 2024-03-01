@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Story = ({ imageUrl, title, description, id }) => {
   return (
     <div className="flex h-full w-full flex-col items-center">
-      <div className="h-[200px] w-full overflow-hidden sm:h-[300px] lg:h-[400px]">
+      <div className="h-[150px] w-full overflow-hidden sm:h-[300px] lg:h-[400px]">
         <Link to={`/seite/${id}`}>
           <img
             src={imageUrl}

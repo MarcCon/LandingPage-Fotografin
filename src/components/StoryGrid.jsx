@@ -4,14 +4,14 @@ import Story from "./StorySeperatly";
 
 const StoryGrid = () => {
   return (
-    <div id="AnkerPortfolio" className="container mx-auto p-12">
+    <div id="AnkerPortfolio" className="container mx-auto w-[85%] pt-12">
       <h2 className="text-center font-serif text-3xl font-light text-yellow-600">
         Meine Zeitreise
       </h2>
       <h3 className="mb-8 text-center font-serif text-4xl font-light md:text-5xl">
         Die letzten Storys
       </h3>
-      <div className="mx-4 grid grid-cols-2 gap-8 pb-16 lg:grid-cols-3 xl:mx-32 2xl:mx-44">
+      <div className="grid grid-cols-2 gap-8 pb-16 lg:grid-cols-3 xl:mx-32 2xl:mx-44">
         {stories.map((story) => (
           <Story
             key={story.id}

@@ -69,7 +69,7 @@ const Footer = () => {
                 name="message"
                 rows="6"
                 className="block w-full rounded-lg border border-white bg-footer-input1 p-2.5 text-sm text-white shadow-sm focus:border-white focus:ring-white"
-                placeholder="Schreiben sie mir..."
+                placeholder="Schreibe mir..."
               ></textarea>
             </div>
             <button

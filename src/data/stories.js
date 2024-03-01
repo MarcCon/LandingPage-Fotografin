@@ -1,9 +1,43 @@
 const stories = [
   {
+    id: 0,
+    imageUrl: "BilderSeiten/Adde/Adde21.jpeg",
+    title: "Portraitshooting",
+    description: "Adedolapo",
+    sentence:
+      "Ein Portraitshooting für ein persönlches Portfolio des Künstlers",
+    images: [
+      { imageUrl: "/BilderSeiten/Adde/Adde1.jpeg", width: 2, height: 3 },
+      { imageUrl: "/BilderSeiten/Adde/Adde2.jpeg", width: 2, height: 3 },
+      { imageUrl: "/BilderSeiten/Adde/Adde3.jpeg", width: 2, height: 3 },
+      { imageUrl: "/BilderSeiten/Adde/Adde4.jpeg", width: 2, height: 3 },
+      { imageUrl: "/BilderSeiten/Adde/Adde5.jpeg", width: 2, height: 3 },
+      { imageUrl: "/BilderSeiten/Adde/Adde6.jpeg", width: 2, height: 3 },
+      { imageUrl: "/BilderSeiten/Adde/Adde7.jpeg", width: 2, height: 3 },
+      { imageUrl: "/BilderSeiten/Adde/Adde8.jpeg", width: 2, height: 3 },
+      { imageUrl: "/BilderSeiten/Adde/Adde9.jpeg", width: 2, height: 3 },
+      { imageUrl: "/BilderSeiten/Adde/Adde10.jpeg", width: 2, height: 3 },
+      { imageUrl: "/BilderSeiten/Adde/Adde11.jpeg", width: 2, height: 3 },
+      { imageUrl: "/BilderSeiten/Adde/Adde12.jpeg", width: 2, height: 3 },
+      { imageUrl: "/BilderSeiten/Adde/Adde13.jpeg", width: 2, height: 3 },
+      { imageUrl: "/BilderSeiten/Adde/Adde14.jpeg", width: 2, height: 3 },
+      { imageUrl: "/BilderSeiten/Adde/Adde15.jpeg", width: 2, height: 3 },
+      { imageUrl: "/BilderSeiten/Adde/Adde16.jpeg", width: 2, height: 3 },
+      { imageUrl: "/BilderSeiten/Adde/Adde17.jpeg", width: 2, height: 3 },
+      { imageUrl: "/BilderSeiten/Adde/Adde18.jpeg", width: 2, height: 3 },
+      { imageUrl: "/BilderSeiten/Adde/Adde19.jpeg", width: 2, height: 3 },
+      { imageUrl: "/BilderSeiten/Adde/Adde20.jpeg", width: 2, height: 3 },
+      { imageUrl: "/BilderSeiten/Adde/Adde21.jpeg", width: 2, height: 3 },
+    ],
+  },
+
+  {
     id: 1,
     imageUrl: "BilderSeiten/Helene/titelbildhelene.jpg",
     title: "Gartenhochzeit in Leipzig",
     description: "Helene & Joshua",
+    sentence:
+      "Eine familiäre Hochzeit im Herzen Leipzigs mit anschließender Feier im eigenen Garten",
     images: [
       { imageUrl: "/BilderSeiten/Helene/Helene1.jpg", width: 2, height: 3 },
       { imageUrl: "/BilderSeiten/Helene/Helene2.jpg", width: 2, height: 3 },
@@ -34,6 +68,7 @@ const stories = [
     imageUrl: "/BilderSeiten/Roxana/titelbildrox.jpg",
     title: "Hochzeit im Rosenhotel",
     description: "Roxana & Christian",
+    sentence: "Eine idyllische Hochzeitsfeier im Rosenhotel Sangerhausen",
     images: [
       { imageUrl: "/BilderSeiten/Roxana/Rox2.jpg", width: 2, height: 3 },
       { imageUrl: "/BilderSeiten/Roxana/Rox1.jpg", width: 3, height: 2 },
@@ -65,6 +100,7 @@ const stories = [
     imageUrl: "/BilderSeiten/Bine/titelbildbine.jpg",
     title: "Hochzeit auf Sardinien",
     description: "Sabine & Steffen",
+    sentence: "Eine romantische Überraschungshochzeit am Strand von Sardinien",
     images: [
       { imageUrl: "/BilderSeiten/Bine/Bine1.jpg", width: 3, height: 2 },
       { imageUrl: "/BilderSeiten/Bine/Bine2.jpg", width: 2, height: 3 },
@@ -98,6 +134,8 @@ const stories = [
     imageUrl: "/BilderSeiten/abiball/titelbildabiball.jpg",
     title: "Abiball 2023",
     description: "Klosterschule Rossleben",
+    sentence:
+      "Eine feierliche Zeugnisübergabe und Abiballfeier in der Klosterschule Roßleben",
     images: [
       { imageUrl: "/BilderSeiten/abiball/Abi1.jpg", width: 3, height: 2 },
       { imageUrl: "/BilderSeiten/abiball/Abi2.jpg", width: 2, height: 3 },
@@ -125,6 +163,7 @@ const stories = [
     imageUrl: "/BilderSeiten/Familienfeier/titelbildfam.jpg",
     title: "Familienshooting in Leipzig",
     description: "Jana & Martin",
+    sentence: "Ein Naturspaziergang vom Gohliser Schlösschen zum Rosental",
     images: [
       { imageUrl: "/BilderSeiten/Familienfeier/Fam1.jpg", width: 3, height: 2 },
       { imageUrl: "/BilderSeiten/Familienfeier/Fam2.jpg", width: 2, height: 3 },
@@ -227,6 +266,7 @@ const stories = [
     imageUrl: "/BilderSeiten/Seega/titelbildsega.jpg",
     title: "Seega-Festival 2023",
     description: "",
+    sentence: "House und Techno Vibes im Kyffhäuserland",
     images: [
       { imageUrl: "/BilderSeiten/Seega/Sega1.jpg", width: 3, height: 2 },
       { imageUrl: "/BilderSeiten/Seega/Sega2.jpg", width: 3, height: 2 },
@@ -249,6 +289,7 @@ const stories = [
     imageUrl: "/BilderSeiten/JuleMichelle/titelbildjule.jpg",
     title: "Schneehochzeit",
     description: "Jule & Michelle",
+    sentence: "Eine ruhige Hochzeit weiß in weiß",
     images: [
       { imageUrl: "/BilderSeiten/JuleMichelle/Jule1.jpg", width: 3, height: 2 },
       { imageUrl: "/BilderSeiten/JuleMichelle/Jule2.jpg", width: 3, height: 2 },
@@ -338,9 +379,19 @@ const stories = [
   },
   {
     id: 8,
-    imageUrl: "/BilderSeiten/Helene/titelbildhelene.jpg",
+    imageUrl: "/BilderSeiten/Daniela/Daniela1.jpg",
     title: "Familienshooting",
-    description: "Daniela & ?",
+    description: "Daniela, Thorsten & Familie",
+    sentence: "Porträtaufnahmen von zwei Kindern der Familie",
+    images: [
+      { imageUrl: "/BilderSeiten/Daniela/Daniela1.jpg", width: 3, height: 2 },
+      { imageUrl: "/BilderSeiten/Daniela/Daniela2.jpg", width: 3, height: 2 },
+      { imageUrl: "/BilderSeiten/Daniela/Daniela3.jpg", width: 3, height: 2 },
+      { imageUrl: "/BilderSeiten/Daniela/Daniela4.jpg", width: 3, height: 2 },
+      { imageUrl: "/BilderSeiten/Daniela/Daniela5.jpg", width: 3, height: 2 },
+      { imageUrl: "/BilderSeiten/Daniela/Daniela6.jpeg", width: 3, height: 2 },
+      { imageUrl: "/BilderSeiten/Daniela/Daniela7.jpeg", width: 3, height: 2 },
+    ],
   },
 
   {
@@ -348,6 +399,7 @@ const stories = [
     imageUrl: "/BilderSeiten/Nele/Nele1.jpg",
     title: "Paarshooting am See",
     description: "Nele & Moritz",
+    sentence: "Ein romantisches Paarshooting am Biesdorfer See in Berlin",
     images: [
       { imageUrl: "/BilderSeiten/Nele/Nele1.jpg", width: 3, height: 4 },
       { imageUrl: "/BilderSeiten/Nele/Nele2.jpg", width: 3, height: 4 },

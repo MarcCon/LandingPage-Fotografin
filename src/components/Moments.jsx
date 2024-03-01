@@ -2,7 +2,7 @@ import React from "react";
 
 const Moments = () => {
   return (
-    <section className="my-8 h-full bg-background-blue py-16 md:my-16 lg:my-32">
+    <section className="my-8 h-full bg-background-blue py-8 md:my-16 lg:my-32">
       <div className="mx-auto w-[85%]">
         <header className="pb-4 pt-8 text-center font-serif text-3xl md:text-3xl lg:text-left lg:text-4xl xl:text-5xl 2xl:mb-8">
           <h2>

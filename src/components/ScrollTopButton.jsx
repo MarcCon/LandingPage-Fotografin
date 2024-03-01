@@ -32,15 +32,14 @@ const ScrollTopButton = () => {
       className={`fixed bottom-10 right-10 z-20 ${
         isVisible ? "opacity-100 duration-300 ease-in" : "opacity-0"
       }`}
-      style={{ display: isVisible ? "block" : "none" }}
     >
       <button
         onClick={scrollToTop}
-        className="rounded-full bg-white p-2"
-        aria-label="Zurück nach oben"
-        tabIndex={isVisible ? "0" : "-1"}
+        className=" rounded-full bg-white 
+
+"
       >
-        <IoIosArrowDropup className="text-5xl md:text-6xl" />
+        <IoIosArrowDropup size={50} />
       </button>
     </div>
   );
