@@ -16,9 +16,9 @@ const ServiceBox = ({ title, description, image, hoverImage }) => {
           className="absolute inset-0 mx-auto mb-4 h-auto w-16 pt-4 transition-opacity duration-300 ease-in-out sm:w-10 md:w-12 lg:w-14 xl:w-16"
         />
       </div>
-      <h5 className="my-4 text-3xl font-light tracking-tight text-gray-900 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
+      <h4 className="my-4 text-3xl font-light tracking-tight text-gray-900 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
         {title}
-      </h5>
+      </h4>
       <p className="md:text-md h-[200px] font-serif text-xl text-gray-700 sm:h-[140px] sm:text-sm md:h-[160px] lg:h-[180px] lg:text-lg xl:h-[200px] xl:text-xl">
         {description}
       </p>
