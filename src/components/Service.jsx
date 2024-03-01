@@ -28,15 +28,15 @@ const ServiceBox = ({ title, description, image, hoverImage }) => {
 const Service = () => {
   return (
     <div className="mx-auto w-[350px] sm:w-[85%] md:w-[85%] lg:w-[85%] xl:w-[75%] 2xl:w-[1000px] ">
-      <h3
+      <h2
         id="AnkerLeistungen"
         className="text-center font-serif text-3xl font-light text-yellow-500"
       >
         Meine Leistungen
-      </h3>
-      <h2 className="mb-8 text-center font-serif text-4xl font-light md:text-5xl">
-        Was ihr erwarten könnt
       </h2>
+      <h3 className="mb-8 text-center font-serif text-4xl font-light md:text-5xl">
+        Was ihr erwarten könnt
+      </h3>
       <div className=" flex grid-cols-1 flex-wrap gap-4 pb-16 text-center font-serif sm:grid sm:grid-cols-2 md:grid-cols-3">
         <ServiceBox
           image="/Icons/IconRinge.png"
