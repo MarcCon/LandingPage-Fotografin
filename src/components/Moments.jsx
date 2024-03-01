@@ -23,7 +23,6 @@ const Moments = () => {
             className="mx-8 mb-2 mt-8 h-[1px] w-full lg:mx-16 lg:h-[400px] lg:w-[1px] xl:h-[500px] 2xl:h-[600px]"
           />
           <article className="text-center font-serif lg:my-auto">
-            <p className="pb-8 text-5xl text-yellow-500"></p>
             <h3 className="mb-8 text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
               Mir ist das wirklichkeitsgetreue und spontane Festhalten von
               persönlichen Momenten wichtig. Dafür lege ich großen Wert auf die
