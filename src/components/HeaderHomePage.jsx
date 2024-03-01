@@ -11,7 +11,10 @@ const HeaderHomePage = () => {
           <br />
           In deinen Bildern.
         </h1>
-        <button className="mt-8 rounded-lg border border-white bg-transparent p-2 px-12 text-base font-thin text-white transition duration-500 ease-in-out hover:bg-white hover:text-black sm:text-xl lg:text-2xl xl:text-3xl">
+        <button
+          className="mt-8 rounded-lg border border-white bg-transparent p-2 px-8 text-base font-thin text-white transition duration-500 ease-in-out hover:bg-white hover:text-black sm:text-xl lg:text-2xl xl:text-3xl"
+          aria-label="Kontaktieren Sie uns"
+        >
           Kontakt
         </button>
       </div>
