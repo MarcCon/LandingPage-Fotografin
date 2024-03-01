@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const NavbarMobil = ({ isOpen, setIsOpen }) => {
   const sidebarVariants = {
     open: { opacity: 1, y: 0 },
-    closed: { opacity: 0, y: "-100%" }, // Bewegung beginnt von -100% (außerhalb des Bildschirms oben)
+    closed: { opacity: 0, y: "-100%" },
   };
 
   return (
@@ -18,7 +18,7 @@ const NavbarMobil = ({ isOpen, setIsOpen }) => {
           exit="closed"
           variants={sidebarVariants}
           transition={{ duration: 0.5 }}
-          className="fixed inset-0 z-50 flex flex-col gap-5 bg-slate-200 p-2 text-center text-2xl md:hidden" // Anpassung für Vollbild und Position
+          className="fixed inset-0 z-50 flex flex-col gap-5 bg-slate-200 p-2 text-center text-2xl md:hidden"
         >
           <AiOutlineClose
             className="text-blue absolute right-2 top-2 duration-150 hover:text-red-400"

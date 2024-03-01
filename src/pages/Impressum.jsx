@@ -19,7 +19,7 @@ function Impressum() {
           <p>
             Lara-Sophie Kuche
             <br />
-            Hedwigstra&szlig;e 13
+            Hedwigstra&szlig;e 11
             <br />
             04315 Leipzig
           </p>

@@ -11,34 +11,20 @@ const ServiceBox = ({ title, description, image, hoverImage }) => {
     >
       <div className="flex h-[70px] flex-col sm:h-[40px] md:h-[50px] lg:h-[60px] xl:h-[70px]">
         <img
-          src={image}
-          alt=""
-          className={`absolute inset-0 mx-auto mb-4 h-auto w-16 pt-4 transition-opacity duration-300 ease-in-out sm:w-10 md:w-12 lg:w-14 xl:w-16 ${
-            isHovered ? "opacity-0" : "opacity-100"
-          }`}
+          src={isHovered && hoverImage ? hoverImage : image}
+          alt={title}
+          className="absolute inset-0 mx-auto mb-4 h-auto w-16 pt-4 transition-opacity duration-300 ease-in-out sm:w-10 md:w-12 lg:w-14 xl:w-16"
         />
-        {hoverImage && (
-          <img
-            src={hoverImage}
-            alt=""
-            className={`absolute inset-0 mx-auto mb-4 h-auto w-16 pt-4 transition-opacity duration-300 ease-in-out sm:w-10 md:w-12 lg:w-14 xl:w-16 ${
-              isHovered ? "opacity-100" : "opacity-0"
-            }`}
-          />
-        )}
       </div>
       <h5 className="my-4 text-3xl font-light tracking-tight text-gray-900 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
         {title}
       </h5>
-      <div className="h-[200px] sm:h-[140px] md:h-[160px] lg:h-[180px] xl:h-[200px]">
-        <p className="md:text-md font-serif text-xl text-gray-700 sm:text-sm lg:text-lg xl:text-xl">
-          {description}
-        </p>
-      </div>
+      <p className="md:text-md h-[200px] font-serif text-xl text-gray-700 sm:h-[140px] sm:text-sm md:h-[160px] lg:h-[180px] lg:text-lg xl:h-[200px] xl:text-xl">
+        {description}
+      </p>
     </div>
   );
 };
-
 const Service = () => {
   return (
     <div className="mx-auto w-[350px] sm:w-[85%] md:w-[85%] lg:w-[85%] xl:w-[75%] 2xl:w-[1000px] ">

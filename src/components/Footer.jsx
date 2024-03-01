@@ -2,14 +2,12 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const Footer = () => {
-  // Erstellen einer Ref für das Formular
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs.init(import.meta.env.VITE_EMAIL_USER_ID);
 
-    // Verwenden der Form-Ref beim Senden
     emailjs
       .sendForm(
         "service_u9yc5y7",
@@ -29,7 +27,7 @@ const Footer = () => {
 
   return (
     <div>
-      <section className=" h-full w-full border-t-2 bg-[url('/FooterPic.jpg')]  bg-cover bg-center bg-no-repeat">
+      <section className=" h-full w-full border-t-2 bg-[url('/BilderHomepage/FooterPic.jpg')]  bg-cover bg-center bg-no-repeat">
         <div className="mx-auto max-w-screen-md px-4 py-8 lg:py-16">
           <h2
             id="AnkerKontakt"

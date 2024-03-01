@@ -42,7 +42,6 @@ const StorySite = () => {
                 return 3;
               }}
               renderPhoto={({ photo }) => (
-                // Hinzufügen von mb-4 für den vertikalen Abstand und m-2 für den horizontalen Abstand
                 <div className="mb-4">
                   <ModalImage
                     small={photo.src}
