@@ -4,6 +4,7 @@ import stories from "../data/stories";
 import HeaderStory from "../components/HeaderStory";
 import { PhotoAlbum } from "react-photo-album";
 import ModalImage from "react-modal-image";
+import LegalFooter from "../components/LegalFooter";
 
 const StorySite = () => {
   const { id } = useParams();
@@ -22,10 +23,10 @@ const StorySite = () => {
       <HeaderStory />
 
       <div>
-        <h1 className="flex justify-center pt-16 font-serif text-5xl">
+        <h1 className="flex justify-center pt-16 font-serif text-3xl sm:text-5xl">
           {story.description}
         </h1>
-        <h2 className="flex justify-center pt-4 font-serif text-3xl">
+        <h2 className="flex justify-center pt-4 text-center font-serif text-xl sm:text-3xl">
           {story.sentence}
         </h2>
         <div className="mx-8 xl:mx-20 2xl:mx-32">
@@ -54,6 +55,7 @@ const StorySite = () => {
           </div>
         </div>
       </div>
+      <LegalFooter />
     </>
   );
 };

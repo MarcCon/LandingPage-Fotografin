@@ -3,7 +3,7 @@ import React from "react";
 const Moments = () => {
   return (
     <section className="my-8 h-full bg-background-blue py-8 md:my-16 lg:my-32">
-      <div className="mx-auto w-[85%]">
+      <div className="mx-auto w-[85%] 2xl:w-[75%]">
         <header className="pb-4 pt-8 text-center font-serif text-3xl md:text-3xl lg:text-left lg:text-4xl xl:text-5xl 2xl:mb-8">
           <h2>
             JEDE LIEBE UND JEDER AUGENBLICK
@@ -23,7 +23,7 @@ const Moments = () => {
             className="mx-8 mb-2 mt-8 h-[1px] w-full lg:mx-16 lg:h-[400px] lg:w-[1px] xl:h-[500px] 2xl:h-[600px]"
           />
           <article className="text-center font-serif lg:my-auto">
-            <h3 className="mb-8 text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
+            <h3 className="mb-8 text-lg md:text-xl xl:text-2xl 2xl:text-2xl">
               Mir ist das wirklichkeitsgetreue und spontane Festhalten von
               persönlichen Momenten wichtig. Dafür lege ich großen Wert auf die
               Details und Emotionen, denn diese machen eure Bilder zu etwas

@@ -1,30 +1,29 @@
 import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
+import emailjs from "emailjs-com";
 
 const Footer = () => {
-  const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.init(import.meta.env.VITE_EMAIL_USER_ID);
 
     emailjs
       .sendForm(
-        "service_u9yc5y7",
+        "service_rfhkmtr",
         "template_5t6yoqy",
-        form.current,
+        e.target,
         "4IJZ6aZDzSTGDMYIG",
       )
       .then(
         (result) => {
           console.log("Email successfully sent!", result.text);
+          alert("Message Sent Successfully"); // Benutzer benachrichtigen
+          e.target.reset(); // Formular zurücksetzen
         },
         (error) => {
           console.error("Failed to send email. Here's the error:", error);
+          alert("Something went wrong!"); // Benutzer benachrichtigen
         },
       );
   };
-
   return (
     <div>
       <section className=" h-full w-full border-t-2 bg-[url('/BilderHomepage/FooterPic.jpg')]  bg-cover bg-center bg-no-repeat">
@@ -39,7 +38,7 @@ const Footer = () => {
             Schreibe mir gerne eine Nachricht, ich antworte so schnell wie
             möglich.
           </p>
-          <form ref={form} onSubmit={sendEmail} className="space-y-8">
+          <form onSubmit={sendEmail} className="space-y-8">
             <div>
               <label
                 htmlFor="email_from"

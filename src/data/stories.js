@@ -255,7 +255,7 @@ const stories = [
         height: 3,
       },
       {
-        imageUrl: "/BilderSeiten/Familienfeier/Fam26.png",
+        imageUrl: "/BilderSeiten/Familienfeier/Fam26.jpg",
         width: 2,
         height: 3,
       },

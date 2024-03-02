@@ -9,13 +9,13 @@ const About = () => {
     >
       <div className="flex flex-col md:flex-row-reverse md:items-center">
         <header className="text-center md:basis-1/3 md:text-left">
-          <h2 className="mb-8 font-serif text-3xl font-bold sm:text-5xl">
+          <h2 className="mb-8 text-center font-serif text-3xl font-bold sm:text-5xl">
             HI, ICH BIN LARA
           </h2>
           <img
             src="/BilderHomepage/lara.png"
             alt="Bild von Lara"
-            className="shadow-glow mx-auto h-auto w-[250px] rounded-full object-cover md:w-[350px]  " // Änderungen hier
+            className="mx-auto h-auto w-[250px] rounded-full object-cover shadow-glow md:w-[350px]  " // Änderungen hier
           />
         </header>
         <div className="text-center md:mt-0 md:basis-2/3 md:text-left">
