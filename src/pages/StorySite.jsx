@@ -40,7 +40,7 @@ const StorySite = () => {
                 return 3;
               }}
               renderPhoto={({ photo }) => (
-                <div className="mb-4">
+                <div className="mb-2">
                   <ModalImage
                     small={photo.src}
                     large={photo.src}

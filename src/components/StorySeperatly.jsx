@@ -13,10 +13,10 @@ const Story = ({ imageUrl, title, description, id }) => {
           />
         </Link>
       </div>
-      <p className="mb-1 mt-2 text-center font-serif text-lg font-bold text-gray-600">
+      <p className="mb-1 mt-2 text-center font-serif text-sm font-bold text-gray-600 sm:text-lg">
         {title}
       </p>
-      <p className="text-center font-serif text-lg text-gray-600">
+      <p className="text-center font-serif text-sm text-gray-600 sm:text-lg">
         {description}
       </p>
     </div>

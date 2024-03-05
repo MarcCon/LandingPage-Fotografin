@@ -2,6 +2,7 @@ import React from "react";
 import HeaderStory from "../components/HeaderStory";
 import Navbar from "../components/Navbar";
 import { PhotoAlbum } from "react-photo-album";
+import LegalFooter from "../components/LegalFooter";
 
 function Datenschutz() {
   return (
@@ -597,12 +598,9 @@ function Datenschutz() {
               https://www.dataprivacyframework.gov/s/participant-search/participant-detail?contact=true&id=a2zt000000001L5AAI&status=Active
             </a>
           </p>
-          <p>
-            Quelle:{" "}
-            <a href="https://www.e-recht24.de">https://www.e-recht24.de</a>
-          </p>
         </div>
       </div>
+      <LegalFooter />
     </>
   );
 }

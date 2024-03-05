@@ -43,17 +43,17 @@ const Service = () => {
     <div className="mx-auto w-[350px] sm:w-[85%] md:w-[85%] lg:w-[85%] xl:w-[75%] 2xl:w-[1000px] ">
       <h2
         id="AnkerLeistungen"
-        className="text-center font-serif text-3xl font-light text-yellow-600"
+        className="text-center font-serif text-2xl font-light text-yellow-600 sm:text-3xl"
       >
         Meine Leistungen
       </h2>
-      <h3 className="mb-8 text-center font-serif text-4xl font-light md:text-5xl">
+      <h3 className="mb-8 text-center font-serif text-3xl font-light sm:text-4xl md:text-5xl">
         Was ihr erwarten könnt
       </h3>
       <div className=" flex grid-cols-1 flex-wrap gap-4 pb-16 text-center font-serif sm:grid sm:grid-cols-2 md:grid-cols-3 ">
         <ServiceBox
           image="/Icons/IconFamilie.png"
-          hoverImage="/Icons/IconFamilieFarbe.png"
+          hoverImage="/Icons/IconFamilieFarbe.jpg"
           title="FAMILIENFEIERN"
           description="Ob Geburtstage, Jubiläen oder Familientreffen – ich fange die einmaligen Momente in schönen Bildern ein."
         />
@@ -65,7 +65,7 @@ const Service = () => {
         />
         <ServiceBox
           image="/Icons/IconKamera.png"
-          hoverImage="/Icons/IconKameraFarbe.png"
+          hoverImage="/Icons/IconKameraFarbe.jpg"
           title="FOTOSHOOTINGS"
           description="Ob Porträt-, Paarshootings oder individuelle Projekte – ich biete Fotoshootings nach deinen Wünschen an, welche die außergewöhnlichen Persönlichkeiten in Szene setzen."
         />
