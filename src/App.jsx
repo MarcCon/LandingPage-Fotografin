@@ -20,7 +20,6 @@ const App = () => {
           <Route path="/seite/:id" element={<StorySite />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/datenschutz" element={<Datenschutz />} />
-          {/* Redirect von /defaultsite zur Homepage */}
           <Route path="/defaultsite" element={<Navigate replace to="/" />} />
         </Routes>
       </Router>
