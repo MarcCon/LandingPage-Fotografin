@@ -1,22 +1,26 @@
-import React, { useRef } from "react";
-import emailjs from "emailjs-com";
+import React, { useRef, useEffect } from "react";
+import emailjs from "@emailjs/browser"; // Aktualisierter Import
 
 const Footer = () => {
+  useEffect(() => {
+    emailjs.init("4IJZ6aZDzSTGDMYIG"); // Initialisiere EmailJS mit deinem Benutzer-Token
+  }, []);
+  const formRef = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_rfhkmtr",
-        "template_5t6yoqy",
-        e.target,
-        "4IJZ6aZDzSTGDMYIG",
+        "service_ufrd9lt", // Deine Service-ID
+        "template_5t6yoqy", // Deine Template-ID
+        formRef.current, // Das Formular, das gesendet wird
+        "4IJZ6aZDzSTGDMYIG", // Dein Benutzer-Token
       )
       .then(
         (result) => {
           console.log("Email successfully sent!", result.text);
           alert("Message Sent Successfully"); // Benutzer benachrichtigen
-          e.target.reset(); // Formular zurücksetzen
         },
         (error) => {
           console.error("Failed to send email. Here's the error:", error);
@@ -24,9 +28,10 @@ const Footer = () => {
         },
       );
   };
+
   return (
     <div>
-      <section className=" h-full w-full border-t-2 bg-[url('/BilderHomepage/FooterPic.jpg')]  bg-cover bg-center bg-no-repeat">
+      <section className="h-full w-full border-t-2 bg-[url('/BilderHomepage/FooterPic.jpg')] bg-cover bg-center bg-no-repeat">
         <div className="mx-auto max-w-screen-md px-4 py-8 lg:py-16">
           <h2
             id="AnkerKontakt"
@@ -38,7 +43,7 @@ const Footer = () => {
             Schreibe mir gerne eine Nachricht, ich antworte so schnell wie
             möglich.
           </p>
-          <form onSubmit={sendEmail} className="space-y-8">
+          <form ref={formRef} onSubmit={sendEmail} className="space-y-8">
             <div>
               <label
                 htmlFor="email_from"
@@ -55,7 +60,6 @@ const Footer = () => {
                 required
               />
             </div>
-
             <div className="sm:col-span-2">
               <label
                 htmlFor="message"

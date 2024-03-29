@@ -3,8 +3,6 @@ import { useParams } from "react-router-dom";
 import stories from "../data/stories";
 import HeaderStory from "../components/HeaderStory";
 import { PhotoAlbum } from "react-photo-album";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css"; // Importiere den CSS-Stil
 import LegalFooter from "../components/LegalFooter";
 
 const StorySite = () => {
@@ -12,78 +10,99 @@ const StorySite = () => {
   const story = stories.find((story) => story.id === parseInt(id));
   const storyImages = story?.images || [];
 
-  const [lightboxOpen, setLightboxOpen] = useState(false);
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [imageToShow, setImageToShow] = useState("");
+  const [lightboxDisplay, setLightboxDisplay] = useState(false);
 
-  const photos = storyImages.map((image, index) => ({
-    src: image.imageUrl,
-    alt: `Bild ${index + 1}`,
-    width: image.width,
-    height: image.height,
-  }));
+  const showImage = (imageSrc) => {
+    setImageToShow(imageSrc);
+    setLightboxDisplay(true);
+  };
 
-  // Bereite die Slides für die Lightbox vor
-  const slides = photos.map((photo) => ({
-    src: photo.src,
-    alt: photo.alt,
-  }));
+  const hideLightbox = () => {
+    setLightboxDisplay(false);
+  };
+
+  const showNext = (e) => {
+    e.stopPropagation();
+    const currentIndex = storyImages.findIndex(
+      (image) => image.imageUrl === imageToShow,
+    );
+    const nextIndex = (currentIndex + 1) % storyImages.length;
+    setImageToShow(storyImages[nextIndex].imageUrl);
+  };
+
+  const showPrev = (e) => {
+    e.stopPropagation();
+    const currentIndex = storyImages.findIndex(
+      (image) => image.imageUrl === imageToShow,
+    );
+    const prevIndex =
+      (currentIndex - 1 + storyImages.length) % storyImages.length;
+    setImageToShow(storyImages[prevIndex].imageUrl);
+  };
 
   return (
     <>
       <HeaderStory />
-
-      <div>
+      <div className="mx-8 xl:mx-20 2xl:mx-32">
         <h1 className="flex justify-center pt-16 font-serif text-3xl sm:text-5xl">
           {story.description}
         </h1>
         <h2 className="flex justify-center pt-4 text-center font-serif text-xl sm:text-3xl">
           {story.sentence}
         </h2>
-        <div className="mx-8 xl:mx-20 2xl:mx-32">
-          <div className="mt-16">
-            <PhotoAlbum
-              layout="masonry"
-              photos={photos}
-              spacing={6}
-              columns={(containerWidth) => {
-                if (containerWidth < 600) return 2;
-                if (containerWidth < 1000) return 3;
-                return 4;
-              }}
-              renderPhoto={({ photo, index }) => (
-                <div
-                  className="mb-2 cursor-pointer"
-                  onClick={() => {
-                    setLightboxOpen(true);
-                    setCurrentSlide(index);
-                  }}
-                >
-                  <img
-                    src={photo.src}
-                    alt={photo.alt}
-                    style={{ width: "100%", display: "block" }}
-                  />
-                </div>
-              )}
-            />
-            {lightboxOpen && (
-              <Lightbox
-                open={lightboxOpen}
-                close={() => setLightboxOpen(false)}
-                slides={slides}
-                currentIndex={currentSlide}
-                // Optional: Konfiguration für die Navigation
-                onNext={() =>
-                  setCurrentSlide((currentSlide + 1) % slides.length)
-                }
-                onPrev={() =>
-                  setCurrentSlide(
-                    (currentSlide - 1 + slides.length) % slides.length,
-                  )
-                }
-              />
+        <div className="mt-16">
+          <PhotoAlbum
+            layout="masonry"
+            photos={storyImages.map((image) => ({
+              src: image.imageUrl,
+              alt: `Bild`,
+              width: image.width,
+              height: image.height,
+            }))}
+            spacing={6}
+            columns={(containerWidth) => {
+              if (containerWidth < 600) return 2;
+              if (containerWidth < 1000) return 3;
+              return 4;
+            }}
+            renderPhoto={({ photo }) => (
+              <div
+                className="mb-2 cursor-pointer"
+                onClick={() => showImage(photo.src)}
+              >
+                <img
+                  src={photo.src}
+                  alt={photo.alt}
+                  style={{ display: "block", width: "100%" }}
+                />
+              </div>
             )}
-          </div>
+          />
+          {lightboxDisplay && (
+            <div
+              className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75"
+              onClick={hideLightbox}
+            >
+              <button
+                className="absolute left-10 text-5xl text-white"
+                onClick={showPrev}
+              >
+                &#10094;
+              </button>
+              <img
+                src={imageToShow}
+                alt="Selected"
+                className="max-h-screen max-w-full"
+              />
+              <button
+                className="absolute right-10 text-5xl text-white"
+                onClick={showNext}
+              >
+                &#10095;
+              </button>
+            </div>
+          )}
         </div>
       </div>
       <LegalFooter />
