@@ -15,7 +15,7 @@ const About = () => {
           <img
             src="/BilderHomepage/lara.png"
             alt="Bild von Lara"
-            className="mx-auto h-auto w-[250px] rounded-full object-cover shadow-glow md:w-[350px]  " // Änderungen hier
+            className="mx-auto h-auto w-[250px] rounded-full object-cover shadow-glow md:w-[350px]  "
           />
         </header>
         <div className="text-center md:mt-0 md:basis-2/3 md:text-left">

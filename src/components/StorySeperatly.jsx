@@ -8,7 +8,7 @@ const Story = ({ imageUrl, title, description, id }) => {
         <Link to={`/seite/${id}`}>
           <img
             src={imageUrl}
-            alt={`Geschichte: ${title}`} // Verbesserte Zugänglichkeit durch präzisere alt-Texte
+            alt={`Geschichte: ${title}`}
             className="h-full w-full cursor-pointer object-cover duration-500 ease-in-out hover:scale-110"
           />
         </Link>

@@ -1,30 +1,35 @@
-import React, { useRef, useEffect } from "react";
-import emailjs from "@emailjs/browser"; // Aktualisierter Import
+import React, { useRef, useEffect, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Footer = () => {
-  useEffect(() => {
-    emailjs.init("4IJZ6aZDzSTGDMYIG"); // Initialisiere EmailJS mit deinem Benutzer-Token
-  }, []);
+  const [successAlert, setSuccessAlert] = useState(false);
   const formRef = useRef();
+
+  useEffect(() => {
+    emailjs.init("4IJZ6aZDzSTGDMYIG");
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_ufrd9lt", // Deine Service-ID
-        "template_5t6yoqy", // Deine Template-ID
-        formRef.current, // Das Formular, das gesendet wird
-        "4IJZ6aZDzSTGDMYIG", // Dein Benutzer-Token
+        "service_ufrd9lt",
+        "template_5t6yoqy",
+        formRef.current,
+        "4IJZ6aZDzSTGDMYIG",
+        {
+          email_from: "kontakt@larakuche-fotografie.de",
+        },
       )
       .then(
         (result) => {
           console.log("Email successfully sent!", result.text);
-          alert("Message Sent Successfully"); // Benutzer benachrichtigen
+          setSuccessAlert(true);
         },
         (error) => {
           console.error("Failed to send email. Here's the error:", error);
-          alert("Something went wrong!"); // Benutzer benachrichtigen
+          alert("Es gab einen Fehler");
         },
       );
   };
@@ -39,22 +44,25 @@ const Footer = () => {
           >
             So erreichst Du mich
           </h2>
-          <p className="mb-8 text-center font-serif text-white sm:text-xl lg:mb-16">
+          <p className="mb-8 text-center font-serif text-white sm:text-xl">
             Schreibe mir gerne eine Nachricht, ich antworte so schnell wie
             möglich.
+          </p>
+          <p className="mb-8 text-center font-serif text-white sm:text-xl lg:mb-16">
+            kontakt@larakuche-fotografie.de
           </p>
           <form ref={formRef} onSubmit={sendEmail} className="space-y-8">
             <div>
               <label
-                htmlFor="email_from"
+                htmlFor="reply_to"
                 className="mb-2 block font-serif text-sm text-white"
               >
                 Deine E-Mail Adresse
               </label>
               <input
                 type="email"
-                id="email_from"
-                name="email_from"
+                id="reply_to"
+                name="reply_to"
                 className="block w-full rounded-lg border border-white bg-footer-input1 p-2.5 text-sm text-white shadow-sm focus:border-white focus:ring-white"
                 placeholder="E-Mail"
                 required
@@ -75,12 +83,19 @@ const Footer = () => {
                 placeholder="Schreibe mir..."
               ></textarea>
             </div>
-            <button
-              type="submit"
-              className="h-12 w-52 rounded-lg border border-white bg-transparent font-serif text-xl font-semibold text-white transition duration-500 ease-in-out hover:border-transparent hover:bg-white hover:text-black"
-            >
-              Senden
-            </button>
+            <div className="flex items-center gap-16">
+              <button
+                type="submit"
+                className="h-12 w-52 rounded-lg border border-white bg-transparent font-serif text-xl font-semibold text-white transition duration-500 ease-in-out hover:border-transparent hover:bg-white hover:text-black"
+              >
+                Senden
+              </button>
+              {successAlert && (
+                <div className="rounded-xl bg-green-600 px-4 py-2 text-xl text-white">
+                  Email wurde gesendet!
+                </div>
+              )}
+            </div>
           </form>
         </div>
       </section>

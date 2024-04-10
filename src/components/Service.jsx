@@ -10,7 +10,6 @@ const ServiceBox = ({ title, description, image, hoverImage }) => {
       className="relative h-[370px] w-full max-w-sm flex-1 rounded-lg border border-gray-200 bg-white p-4 shadow-md transition-shadow duration-300 ease-in-out hover:shadow-xl sm:h-[300px] md:h-[350px] lg:h-[400px] xl:h-[450px]"
     >
       <div className="flex h-[70px] flex-col sm:h-[40px] md:h-[50px] lg:h-[60px] xl:h-[70px]">
-        {/* Standardbild */}
         <img
           src={image}
           alt={title}
@@ -18,7 +17,6 @@ const ServiceBox = ({ title, description, image, hoverImage }) => {
             isHovered ? "opacity-0" : "opacity-100"
           }`}
         />
-        {/* Hover-Bild */}
         {hoverImage && (
           <img
             src={hoverImage}
