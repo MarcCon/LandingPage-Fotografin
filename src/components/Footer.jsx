@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const Footer = () => {
-  const [successAlert, setSuccessAlert] = useState(true);
+  const [successAlert, setSuccessAlert] = useState(false);
   const formRef = useRef();
 
   useEffect(() => {
