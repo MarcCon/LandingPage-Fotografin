@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const Footer = () => {
-  const [successAlert, setSuccessAlert] = useState(false);
+  const [successAlert, setSuccessAlert] = useState(true);
   const formRef = useRef();
 
   useEffect(() => {
@@ -83,16 +83,16 @@ const Footer = () => {
                 placeholder="Schreibe mir..."
               ></textarea>
             </div>
-            <div className="flex items-center gap-16">
+            <div className=" flex items-center gap-8  lg:gap-16">
               <button
                 type="submit"
-                className="h-12 w-52 rounded-lg border border-white bg-transparent font-serif text-xl font-semibold text-white transition duration-500 ease-in-out hover:border-transparent hover:bg-white hover:text-black"
+                className="h-12 w-32 rounded-lg border border-white bg-transparent font-serif text-xl font-semibold text-white transition duration-500 ease-in-out hover:border-transparent hover:bg-white hover:text-black lg:w-52"
               >
                 Senden
               </button>
               {successAlert && (
-                <div className="rounded-xl bg-green-600 px-4 py-2 text-xl text-white">
-                  Email wurde gesendet!
+                <div className="rounded-xl bg-green-600 px-4 py-2 text-lg text-white md:text-xl">
+                  Email gesendet!
                 </div>
               )}
             </div>
