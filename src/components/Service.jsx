@@ -40,7 +40,7 @@ const Service = () => {
   return (
     <div className="mx-auto w-[350px] sm:w-[85%] md:w-[85%] lg:w-[85%] xl:w-[75%] 2xl:w-[1000px] ">
       <h2
-        id="AnkerLeistungen"
+        id="leistungen"
         className="text-center font-serif text-2xl font-light text-yellow-600 sm:text-3xl"
       >
         Meine Leistungen

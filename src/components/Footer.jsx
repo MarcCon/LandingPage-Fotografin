@@ -39,7 +39,7 @@ const Footer = () => {
       <section className="h-full w-full border-t-2 bg-[url('/BilderHomepage/FooterPic.jpg')] bg-cover bg-center bg-no-repeat">
         <div className="mx-auto max-w-screen-md px-4 py-8 lg:py-16">
           <h2
-            id="AnkerKontakt"
+            id="kontakt"
             className="mb-4 text-center font-serif text-4xl tracking-tight text-white"
           >
             So erreichst Du mich

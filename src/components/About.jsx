@@ -4,7 +4,7 @@ import { CiInstagram, CiMail } from "react-icons/ci";
 const About = () => {
   return (
     <section
-      id="AnkerÜberMich"
+      id="uebermich"
       className="mx-auto mb-8 mt-16 w-[85%] sm:mb-24 sm:pt-8 xl:w-[65%]"
     >
       <div className="flex flex-col md:flex-row-reverse md:items-center">

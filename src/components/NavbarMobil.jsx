@@ -25,35 +25,19 @@ const NavbarMobil = ({ isOpen, setIsOpen }) => {
             onClick={() => setIsOpen(false)}
           />
 
-          <Link to="/" className="pt-32">
+          <Link to="/" className="pt-32" onClick={() => setIsOpen(false)}>
             HOME
           </Link>
-          <Link
-            to="/#AnkerÜberMich"
-            className=""
-            onClick={() => setIsOpen(false)}
-          >
+          <Link to="/#uebermich" className="" onClick={() => setIsOpen(false)}>
             ÜBER MICH
           </Link>
-          <Link
-            to="/#AnkerLeistungen"
-            className=""
-            onClick={() => setIsOpen(false)}
-          >
+          <Link to="/#leistungen" className="" onClick={() => setIsOpen(false)}>
             LEISTUNGEN
           </Link>
-          <Link
-            to="/#AnkerPortfolio"
-            className=""
-            onClick={() => setIsOpen(false)}
-          >
+          <Link to="/#portfolio" className="" onClick={() => setIsOpen(false)}>
             PORTFOLIO
           </Link>
-          <Link
-            to="/#AnkerKontakt"
-            className=""
-            onClick={() => setIsOpen(false)}
-          >
+          <Link to="/#kontakt" className="" onClick={() => setIsOpen(false)}>
             KONTAKT
           </Link>
         </motion.div>

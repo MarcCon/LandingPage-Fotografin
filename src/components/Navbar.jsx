@@ -5,10 +5,10 @@ import { HashLink as Link } from "react-router-hash-link";
 
 const navLinks = [
   { name: "HOME", path: "/" },
-  { name: "ÜBER MICH", path: "/#AnkerÜberMich" },
-  { name: "PORTFOLIO", path: "/#AnkerPortfolio" },
-  { name: "LEISTUNGEN", path: "/#AnkerLeistungen" },
-  { name: "KONTAKT", path: "/#AnkerKontakt" },
+  { name: "ÜBER MICH", path: "/#uebermich" },
+  { name: "LEISTUNGEN", path: "/#leistungen" },
+  { name: "PORTFOLIO", path: "/#portfolio" },
+  { name: "KONTAKT", path: "/#kontakt" },
 ];
 
 const Navbar = () => {

@@ -4,7 +4,7 @@ import Story from "./StorySeperatly";
 
 const StoryGrid = () => {
   return (
-    <div id="AnkerPortfolio" className="container mx-auto w-[85%] pt-12">
+    <div id="portfolio" className="container mx-auto w-[85%] pt-12">
       <h2 className="text-center font-serif text-2xl font-light text-yellow-600 sm:text-3xl">
         Meine Zeitreise
       </h2>
